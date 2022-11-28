@@ -1,4 +1,7 @@
 /* 메인 비쥬얼 */
+.f14 {font-size: 14px}
+.gray{color: #666666}
+.tct{text-align: center}
 .edu_main .visual_banner img{border-radius: 15px;width: 100%}
 .edu_main .visual_banner .slick-list{margin: 0 -10px}
 .edu_main .visual_banner .slick-slide{margin: 0 10px}
@@ -38,9 +41,9 @@
 .curriculum .cur_list{margin-top: 30px;display: flex;flex-wrap: wrap}
 .curriculum .cur_list .item{width: calc(33.333% - 33.333px);margin-right: 50px;position: relative;margin-top: 60px}
 .curriculum .cur_list .item:nth-child(-n+3){margin-top: 0}
-.curriculum .cur_list .item:after{content: '';display: block;background: url(../images/edu/gray_arrow.png);width: 22px;height: 42px;position: absolute;right: 0;top: 0;}
+.curriculum .cur_list .item:after{content: '';display: block;background: url(../images/edu/gray_arrow.png) no-repeat;width: 22px;height: 42px;position: absolute;right: 0;top: 0;}
 .curriculum .cur_list .item:nth-child(1):after,
-.curriculum .cur_list .item:nth-child(4):after{background: url(../images/edu/blue_arrow.png);}
+.curriculum .cur_list .item:nth-child(4):after{background: url(../images/edu/blue_arrow.png)no-repeat;}
 .curriculum .cur_list .item:nth-child(3n){margin-right: 0}
 .curriculum .cur_list .item .tit{font-size: 22px;font-weight: bold;max-width: calc(100% - 30px); white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .curriculum .cur_list .item .desc{color: #666666;font-size: 16px;max-width: calc(100% - 30px);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -51,6 +54,66 @@
 .curriculum .cur_list .item .etc p{display: flex;align-items: center;font-size: 14px;}
 .curriculum .cur_list .item .etc strong{background: #ededed;padding: 2px 6px;margin-right: 10px;font-weight: 400}
 
+/* 서브 온라인교육상세 페이지 */
+.edu_detail{display: flex;justify-content: space-between}
+.edu_detail .left{width: 450px;}
+.edu_detail .left .thumb{width: 100%;height: 270px}
+.edu_detail .left .thumb img{display: block;width: 100%;height: 100%;}
+.edu_detail .left .info_list{display: flex;flex-wrap: wrap;}
+.edu_detail .left .info_list li{width: calc(50% - 10px);margin-right: 20px;display: flex;font-size: 13px;margin-top: 5px}
+.edu_detail .left .info_list li:nth-child(2n){margin-right: 0}
+.edu_detail .left .info_list li strong{width: 60px;}
+.edu_detail .right{width: calc(100% -  480px);}
+.edu_detail .btn_wrap{text-align: center;margin-top: 20px}
+.edu_detail .btn_wrap a + a{margin-left: 10px}
+.edu_detail .btn_style01.blue_br_btn{border: 1px solid #2189ff;font-weight: 600}
+.edu_detail .btn_style01.view_btn{background: #cdcdcd;color: #fff;font-weight: 600;border: 1px solid #cdcdcd}
+.edu_detail .btn_style01.view_btn:before{content: '';display: inline-block;margin-top: -2px;background: url(../images/edu/ed_play_btn.png) no-repeat;width: 19px;height: 19px;vertical-align: middle;margin-right: 5px}
+.edu_detail .btn_style01.view_btn .num{color: #2189ff;}
+.edu_detail .btn_style01{font-size: 14px;padding: 8px 30px;border-radius: 30px}
+.edu_sub .btn_style02{font-size: 13px;display: inline-block;background: #ddd;padding: 3px 40px;border-radius: 40px;background: #ddd;font-weight: 500}
+.edu_sub .btn_style02.blue_btn{background: #2189ff;color: #fff;}
+.edu_detail .right{display: flex;flex-direction: column}
+.edu_detail .right .tit{font-size: 30px;font-weight: bold}
+.edu_detail .right .breadcrumb{display: flex;} 
+.edu_detail .right .breadcrumb li{font-size: 14px;color: #666;}
+.edu_detail .right .breadcrumb li:after{content: '>';display: inline-block;margin: 0 5px}
+.edu_detail .right .breadcrumb li:last-child:after{display: none}
+.edu_detail .right .tag{display: flex;flex-wrap: wrap;margin: 20px 0 30px 0;border-bottom: 1px solid #ededed;padding-bottom: 30px}
+.edu_detail .right .tag a{color: #666;border: 1px solid #666666;margin-right: 10px}
+.edu_sub .list_style01 li{position: relative;font-size: 14px;color: #666666;padding-left: 10px}
+.edu_sub .list_style01 li:before{content: '';width: 2px;height: 2px;background: #adadad;position: absolute;left: 0;top: 10px}
+.edu_detail .right .btn_wrap{display: flex;margin-top: auto}
+.edu_detail .right .learn_btn{background: #2189ff;color: #fff;font-size: 20px;font-weight: 500;height: 50px;line-height: 50px;width: calc(100% - 80px);display: inline-block;width: 500px;border-radius: 30px}
+.edu_detail .right .bmk_btn{background: url(../images/edu/bookmk.png) no-repeat #ededed center;width: 80px;height: 50px;display: inline-block;border-radius:30px;text-indent: -9999px}
+
+.edu_tab{margin: 90px 0 40px 0}
+.edu_tab ul{display: flex;}
+.edu_tab ul li{flex: 1 1;text-align: center;font-size: 20px;border: 1px solid #c1c1c1;padding: 10px;margin-right: -1px;font-weight: 500}
+.edu_tab ul li.active{background: #2189ff;border: 1px solid #2189ff}
+.edu_tab ul li.active a{color: #fff}
+
+/* 강사소개 */
+.edu_cont{padding: 0 40px }
+.edu_cont .tc_area{display: flex;justify-content: space-between}
+.edu_cont .tc_area .tc_thumb{border: 1px solid #c1c1c1;width: 220px;height: 235px;}
+.edu_cont .tc_area .tc_thumb img{display: block;width: 100%;height: 100%;}
+.edu_cont .tc_area .tc_cont{width: calc(100% - 260px)}
+.edu_cont .tc_area .tc_cont .tc_info{margin-bottom: 30px}
+.edu_cont .tc_area .tc_cont .tc_info li{margin-bottom: 10px;display: flex;justify-content: space-between}
+.edu_cont .tc_area .tc_cont .tc_info li strong{width: 60px;}
+.edu_cont .tc_area .tc_cont .tc_info li span{width: calc(100% - 60px)}
+.edu_cont .tc_area .tc_cont .tc_info li:last-child{margin-bottom: 0}
+
+/* 학습목차 */
+.table_style01 caption{text-indent: -99999px;position: absolute;left: -99999px}
+.table_style01 table {width: 100%;border-collapse: collapse}
+.table_style01 table th,
+.table_style01 table td{border: 1px solid #c1c1c1;padding: 10px}
+
+.table_style01 table th{border-bottom: 0}
+.table_style01 table th{background: #ededed;font-size: 15px;font-weight: 500;}
+.table_style01 table td{font-size: 14px;color: #666666}
 
 @media all and (max-width:1390px){
 	.smart_green .right{width: 720px}
@@ -67,9 +130,15 @@
 
 
 @media all and (max-width:768px){
+	.edu_main .visual_banner .slick-arrow{width: 30px;height: 30px;background-size: 10px}
+	.edu_main .visual_banner .slick-prev{left: 20px}
+	.edu_main .visual_banner .slick-next{right: 20px}
+	.edu_main .visual_banner .controler{bottom: 5px}
 	.smart_green h3{font-size: 30px;}
+	.curriculum .cur_list .item:after{background-size: 15px !important;}
 	.smart_green .txt{font-size: 16px;}
 	.smart_green .left a{font-size: 13px}
+	.curriculum .cur_list{margin-top: 10px}
 	.curriculum .cur_list .item{width: calc(50% - 10px);margin-right: 20px;margin-top: 30px}
 	.curriculum .cur_list .item:nth-child(2n){margin-right: 0;}
 	.curriculum .cur_list .item:nth-child(3n){margin-right: auto;}
