@@ -57,12 +57,13 @@
 /* 서브 온라인교육상세 페이지 */
 .edu_detail{display: flex;justify-content: space-between}
 .edu_detail .left{width: 450px;}
-.edu_detail .left .thumb{width: 100%;height: 270px}
+.edu_detail .left .thumb{width: 100%;height: 270px;margin-bottom: 10px}
 .edu_detail .left .thumb img{display: block;width: 100%;height: 100%;}
 .edu_detail .left .info_list{display: flex;flex-wrap: wrap;}
 .edu_detail .left .info_list li{width: calc(50% - 10px);margin-right: 20px;display: flex;font-size: 13px;margin-top: 5px}
 .edu_detail .left .info_list li:nth-child(2n){margin-right: 0}
 .edu_detail .left .info_list li strong{width: 60px;}
+.edu_detail .left .info_list li:last-child{width: 100%}
 .edu_detail .right{width: calc(100% -  480px);}
 .edu_detail .btn_wrap{text-align: center;margin-top: 20px}
 .edu_detail .btn_wrap a + a{margin-left: 10px}
@@ -79,17 +80,18 @@
 .edu_detail .right .breadcrumb li{font-size: 14px;color: #666;}
 .edu_detail .right .breadcrumb li:after{content: '>';display: inline-block;margin: 0 5px}
 .edu_detail .right .breadcrumb li:last-child:after{display: none}
-.edu_detail .right .tag{display: flex;flex-wrap: wrap;margin: 20px 0 30px 0;border-bottom: 1px solid #ededed;padding-bottom: 30px}
-.edu_detail .right .tag a{color: #666;border: 1px solid #666666;margin-right: 10px}
+.edu_detail .right .tag{display: flex;flex-wrap: wrap;margin: 10px 0 30px 0;border-bottom: 1px solid #ededed;padding-bottom: 30px}
+.edu_detail .right .tag a{color: #666;border: 1px solid #666666;margin-right: 10px;margin-top: 10px}
 .edu_sub .list_style01 li{position: relative;font-size: 14px;color: #666666;padding-left: 10px}
 .edu_sub .list_style01 li:before{content: '';width: 2px;height: 2px;background: #adadad;position: absolute;left: 0;top: 10px}
 .edu_detail .right .btn_wrap{display: flex;margin-top: auto}
 .edu_detail .right .learn_btn{background: #2189ff;color: #fff;font-size: 20px;font-weight: 500;height: 50px;line-height: 50px;width: calc(100% - 80px);display: inline-block;width: 500px;border-radius: 30px}
 .edu_detail .right .bmk_btn{background: url(../images/edu/bookmk.png) no-repeat #ededed center;width: 80px;height: 50px;display: inline-block;border-radius:30px;text-indent: -9999px}
 
-.edu_tab{margin: 90px 0 40px 0}
+.edu_sub .edu_tab{margin: 90px 0 40px 0}
 .edu_tab ul{display: flex;}
-.edu_tab ul li{flex: 1 1;text-align: center;font-size: 20px;border: 1px solid #c1c1c1;padding: 10px;margin-right: -1px;font-weight: 500}
+.edu_tab ul li{flex: 1 1;text-align: center;font-size: 20px;border: 1px solid #c1c1c1;margin-right: -1px;font-weight: 500}
+.edu_tab ul li a{display: block;padding: 10px;}
 .edu_tab ul li.active{background: #2189ff;border: 1px solid #2189ff}
 .edu_tab ul li.active a{color: #fff}
 
@@ -113,7 +115,7 @@
 
 .table_style01 table th{border-bottom: 0}
 .table_style01 table th{background: #ededed;font-size: 15px;font-weight: 500;}
-.table_style01 table td{font-size: 14px;color: #666666}
+.table_style01 table td{font-size: 14px;color: #666666;padding: 10px 30px}
 
 @media all and (max-width:1390px){
 	.smart_green .right{width: 720px}
@@ -126,6 +128,12 @@
 	.smart_green .inner{display: block;}
 	.smart_green .txt{margin: 5px 0 30px 0}
 	.smart_green .right{margin-top: 30px;width: 100%}
+	
+	/* 온라인교육과정 상세*/
+	.edu_detail .left{width: 350px}
+	.edu_detail .left .thumb {height: auto}
+	.edu_detail .left .thumb img {height: auto}
+	.edu_detail .right{width: calc(100% - 370px)}
 }
 
 
@@ -139,12 +147,46 @@
 	.smart_green .txt{font-size: 16px;}
 	.smart_green .left a{font-size: 13px}
 	.curriculum .cur_list{margin-top: 10px}
-	.curriculum .cur_list .item{width: calc(50% - 10px);margin-right: 20px;margin-top: 30px}
+	.curriculum .cur_list .item{width: calc(50% - 5px);margin-right: 10px;margin-top: 30px}
 	.curriculum .cur_list .item:nth-child(2n){margin-right: 0;}
 	.curriculum .cur_list .item:nth-child(3n){margin-right: auto;}
 	.curriculum .cur_list .item:nth-child(3){margin-top: 30px}
 	
 	.curriculum h3{font-size: 30px}
-	.curriculum .cur_list .item .tit{font-size: 18px}.curriculum .cur_list .item .desc{font-size: 14px}
+	.curriculum .cur_list .item .tit{font-size: 15px}
+	.curriculum .cur_list .item .desc{font-size: 14px}
 	.curriculum .cur_list .item .etc p{font-size: 13px}
+	
+	
+	/* 온라인교육과정 상세*/
+	.edu_sub .edu_tab{margin: 30px 0 20px 0}
+	.edu_tab ul li a{font-size: 13px;padding: 5px 10px}
+	.edu_cont{padding: 0}
+	.edu_detail{display: block;}
+	.edu_detail .left{width: 100%;}
+	.edu_detail .right{width: 100%;margin-top: 30px}
+	.edu_detail .right .tit{font-size: 22px}
+	.edu_detail .right .breadcrumb li{font-size: 13px}
+	.edu_detail .btn_style01{padding: 5px 20px;font-size: 13px}
+	.edu_detail .right .learn_btn{font-size: 16px;height: 40px;line-height: 40px;width: calc(100% - 60px)}
+	.edu_detail .right .bmk_btn{width: 55px;height: 40px;background-size: 20px}
+	.edu_detail .right .tag{margin: 10px 0 20px 0;padding-bottom: 20px}
+	.edu_detail .right .tag a{padding: 2px 15px;margin-right: 5px}
+	.edu_detail .right .btn_wrap{margin-top: 30px}
+	
+	/* 강사소개 */
+	.edu_cont .tc_area{display: block;}
+	.edu_cont .tc_area .tc_cont{width: 100%;margin-top: 20px}
+	
+	/* 학습목차 */
+	.table_style01 table th{font-size: 14px}
+	.table_style01 table td{padding: 10px;font-size: 13px}
+	.table_style01 .btn_style02	{padding: 3px 15px;white-space: nowrap}
+}
+
+@media all and (max-width:480px){
+	/* 온라인교육과정 상세*/
+	.edu_detail .left .info_list{display: block;}
+	.edu_detail .left .info_list li{width: 100%;}
+
 }
