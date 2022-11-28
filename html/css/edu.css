@@ -1,0 +1,81 @@
+/* 메인 비쥬얼 */
+.edu_main .visual_banner img{border-radius: 15px;width: 100%}
+.edu_main .visual_banner .slick-list{margin: 0 -10px}
+.edu_main .visual_banner .slick-slide{margin: 0 10px}
+.edu_main .visual_banner .slick-arrow{width: 60px;height: 60px;border-radius: 50%;text-indent: -9999px;position: absolute;top: 50%;transform: translateY(-50%);z-index: 5}
+.edu_main .visual_banner .slick-prev{left: 40px;background: url(../images/edu/vs_prev.png) no-repeat rgba(255, 255, 255, 0.4) center; }
+.edu_main .visual_banner .slick-next{right: 40px;background: url(../images/edu/vs_next.png) no-repeat rgba(255, 255, 255, 0.4) center; }
+
+.edu_main .visual_banner .controler{display: flex;justify-content: center;position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);align-items: center;}
+.edu_main .visual_banner .ctr_btn{list-style: none;display: flex;flex-direction: column;align-items: center;margin-top: -5px;}
+.edu_main .visual_banner .ctr_btn button{background: rgba(255, 255, 255, 0.8);text-indent: -9999px;width: 40px;height: 15px;border-radius: 30px;display: block;margin-right: 5px}
+.edu_main .visual_banner .ctr_btn.play button{background: url(../images/edu/vs_play.png) no-repeat center rgba(255, 255, 255, 0.8);display: none}
+.edu_main .visual_banner .ctr_btn.stop button{background: url(../images/edu/vs_stop.png) no-repeat center rgba(255, 255, 255, 0.8);display: block}
+.edu_main .visual_banner .slick-dots li {margin:0 8px;transform: scale(1)}
+.edu_main .visual_banner .slick-dots li button{text-indent: -9999px;width: 15px;height: 15px;border-radius: 50%;background: rgba(255, 255, 255, 0.68)}
+.edu_main .visual_banner .slick-dots li.slick-active{transform: none}
+.edu_main .visual_banner .slick-dots li.slick-active button{background: #3e9f9e;}
+
+/* smart_green */
+.smart_green{background: url(../images/edu/section2_bg.png) no-repeat #f8f8f8;padding: 60px 0 70px 0;margin: 50px  0}
+.smart_green .inner{display: flex;justify-content: space-between}
+.smart_green .right{width: 880px}
+.smart_green h3{color: #fff;font-size: 47px;font-weight: 800;position: relative;display: inline-block;}
+.smart_green h3:after{content: '';display: block;background: url(../images/edu/section3_bg.png) no-repeat;width: 115px;height: 85px;position: absolute;right: -100px;top: -20px}
+.smart_green .txt{font-size: 18px;color: #fff;margin: 5px 0 50px 0}
+.smart_green .left a{color: #88bd44;font-size: 14px;display: inline-block;border-bottom: 1px solid #88bd44}
+.smart_green .frame {height: 205px;}
+.smart_green .frame ul{}
+.smart_green .frame ul li {float: left;width:280px;margin: 0 20px 0 0;border-radius: 20px;}
+.smart_green .frame ul li a{display: block;border-radius: 20px;overflow: hidden}
+.smart_green .frame ul li img{display: block;height: 100%;width: 100%}
+/* Scrollbar */
+.smart_green .scrollbar {margin-top: 40px;height: 5px;background: #e8e8e8;line-height: 0;border-radius: 5px;overflow: hidden;cursor: pointer}
+.smart_green .scrollbar .handle {width: 100px;height: 100%;background: #b8b8b8;cursor: pointer;}
+
+/*커리큘럼*/
+.curriculum h3{font-size: 47px;font-weight: 800}
+.curriculum .cur_list{margin-top: 30px;display: flex;flex-wrap: wrap}
+.curriculum .cur_list .item{width: calc(33.333% - 33.333px);margin-right: 50px;position: relative;margin-top: 60px}
+.curriculum .cur_list .item:nth-child(-n+3){margin-top: 0}
+.curriculum .cur_list .item:after{content: '';display: block;background: url(../images/edu/gray_arrow.png);width: 22px;height: 42px;position: absolute;right: 0;top: 0;}
+.curriculum .cur_list .item:nth-child(1):after,
+.curriculum .cur_list .item:nth-child(4):after{background: url(../images/edu/blue_arrow.png);}
+.curriculum .cur_list .item:nth-child(3n){margin-right: 0}
+.curriculum .cur_list .item .tit{font-size: 22px;font-weight: bold;max-width: calc(100% - 30px); white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.curriculum .cur_list .item .desc{color: #666666;font-size: 16px;max-width: calc(100% - 30px);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.curriculum .cur_list .item .img{border: 1px solid #d0d0d0;border-radius: 20px;overflow: hidden;margin: 20px 0 15px 0}
+.curriculum .cur_list .item img{display: block;width: 100%;height: 100%;}
+.curriculum .cur_list .item .etc{display: flex;}
+.curriculum .cur_list .item .etc p + p{margin-left: 15px}
+.curriculum .cur_list .item .etc p{display: flex;align-items: center;font-size: 14px;}
+.curriculum .cur_list .item .etc strong{background: #ededed;padding: 2px 6px;margin-right: 10px;font-weight: 400}
+
+
+@media all and (max-width:1390px){
+	.smart_green .right{width: 720px}
+	.curriculum .cur_list .item .etc{display: block;}
+	.curriculum .cur_list .item .etc p + p{margin-left: 0;margin-top: 10px}
+}
+
+@media all and (max-width:1024px){
+	.smart_green{background-size: cover}
+	.smart_green .inner{display: block;}
+	.smart_green .txt{margin: 5px 0 30px 0}
+	.smart_green .right{margin-top: 30px;width: 100%}
+}
+
+
+@media all and (max-width:768px){
+	.smart_green h3{font-size: 30px;}
+	.smart_green .txt{font-size: 16px;}
+	.smart_green .left a{font-size: 13px}
+	.curriculum .cur_list .item{width: calc(50% - 10px);margin-right: 20px;margin-top: 30px}
+	.curriculum .cur_list .item:nth-child(2n){margin-right: 0;}
+	.curriculum .cur_list .item:nth-child(3n){margin-right: auto;}
+	.curriculum .cur_list .item:nth-child(3){margin-top: 30px}
+	
+	.curriculum h3{font-size: 30px}
+	.curriculum .cur_list .item .tit{font-size: 18px}.curriculum .cur_list .item .desc{font-size: 14px}
+	.curriculum .cur_list .item .etc p{font-size: 13px}
+}
