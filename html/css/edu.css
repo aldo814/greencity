@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* 메인 비쥬얼 */
 .f14 {font-size: 14px}
 .gray{color: #666666}
@@ -71,9 +73,11 @@
 .edu_detail .btn_style01.view_btn{background: #cdcdcd;color: #fff;font-weight: 600;border: 1px solid #cdcdcd}
 .edu_detail .btn_style01.view_btn:before{content: '';display: inline-block;margin-top: -2px;background: url(../images/edu/ed_play_btn.png) no-repeat;width: 19px;height: 19px;vertical-align: middle;margin-right: 5px}
 .edu_detail .btn_style01.view_btn .num{color: #2189ff;}
-.edu_detail .btn_style01{font-size: 14px;padding: 8px 30px;border-radius: 30px}
+.edu_sub .btn_style01{font-size: 14px;padding: 8px 30px;border-radius: 30px}
 .edu_sub .btn_style02{font-size: 13px;display: inline-block;background: #ddd;padding: 3px 40px;border-radius: 40px;background: #ddd;font-weight: 500}
-.edu_sub .btn_style02.blue_btn{background: #2189ff;color: #fff;}
+.edu_sub .blue_btn{background: #2189ff;color: #fff;}
+.edu_sub .gray_btn{background: #515151;color: #fff;}
+.edu_sub .red_btn{background: #fa6105;color: #fff;}
 .edu_detail .right{display: flex;flex-direction: column}
 .edu_detail .right .tit{font-size: 30px;font-weight: bold}
 .edu_detail .right .breadcrumb{display: flex;} 
@@ -117,6 +121,78 @@
 .table_style01 table th{background: #ededed;font-size: 15px;font-weight: 500;}
 .table_style01 table td{font-size: 14px;color: #666666;padding: 10px 30px}
 
+/* 학습현황 */
+.es_tit{font-size: 30px;}
+.es_tit02{font-size: 28px;text-align: center;margin:60px 0}
+.edu_status .edu_tab{margin: 30px 0 60px 0}
+.edu_status .sp_tit{text-align: center;font-size: 28px;position: relative;margin-bottom: 130px}
+.edu_status .sp_tit:after{content: '';display: block;background: url(../images/edu/sp_bg.png) no-repeat;width: 649px;height: 132px;position: absolute;left: 50%;transform: translatex(-50%);bottom: -100px}
+.edu_status .table_style01 .btn_style01{width: 100px;display: inline-block;padding: 5px}
+
+/* 페이징 */
+.paging{display: flex;justify-content: center;margin-top: 50px;}
+.paging li {margin: 0 10px;}
+.paging li a{font-size: 13px;color: #777;}
+.paging li.active a{color: #1b1b1b;font-weight: bold;}
+.paging li.active a:hover,
+.paging li.active a:active,
+.paging li.active a:focus{color: #1b1b1b;font-weight: bold;}
+.paging .pageState{display: none}
+.paging .pageState .curPage{color: #1b1b1b;font-weight: bold;}
+.paging .pageState .curPage:after{content: '/';margin:0 5px 0 8px}
+.paging .pageState .totPage{color: #777;}
+
+/* foot banner */
+.foot_banner{display: flex;margin-top: 100px;justify-content: space-between}
+.foot_banner > div{border-radius: 20px;overflow: hidden;width: calc(50% - 40px);padding: 40px}
+.foot_banner > div a{display: block}
+.foot_banner > div p{color: #fff}
+.foot_banner > div .tit{font-size: 24px}
+.foot_banner > div .link{font-size: 18px}
+.foot_banner > div.people{background: url(../images/edu/foot_banner01.png) no-repeat #2ebf93 right bottom 0;}
+.foot_banner > div.children{background: url(../images/edu/foot_banner02.png) no-repeat #f8cf41 right bottom 0;}
+
+/* 학습완료 검색영역*/
+.edu_search{background: #eaf0f7;max-width: 640px;margin: auto;padding: 20px;border-radius: 25px;display: flex;justify-content: center;align-items: center;}
+.edu_search p{font-size: 14px;margin-right: 20px}
+.edu_search span{margin: 0 10px}
+.edu_search input{border: 1px solid #bcc9d9;padding: 7px 10px;width: 130px;background: url(../images/edu/calender_btn.png) no-repeat #fff right 5px center}
+.edu_search button{background: #fff;margin-left: 25px;padding: 6px 40px;border: 1px solid #000;border-radius: 30px;font-size: 13px}
+.edu_search label{text-indent: -9999px;position: absolute;left: -9999px;width: 1px;height: 1px;overflow: hidden}
+
+/* 수료증 */
+.cert_wrap {padding: 50px 0}
+.cert_area{background: url(../images/edu/cert_bg.png) no-repeat top center;font-family: 'Noto Serif', serif;width: 1000px;margin: auto;padding:120px 180px 130px 180px;}
+.cert_area  .cert_top{display: flex;justify-content: space-between;align-items: center}
+.cert_area  .cert_top .num{font-size: 18px}
+.cert_area  .tit{font-size: 50px;font-weight: bold;text-align: center;margin: 100px 0 57px 0}
+.cert_area ul li{font-size: 16px;margin-bottom: 5px}
+.cert_area ul li:last-child{margin-bottom: 0}
+.cert_area .desc{text-align: center;margin-top: 100px;font-size: 24px;font-weight: bold}
+.cert_area .date{text-align: center;margin-top: 200px;font-size: 16px;}
+.cert_area .foot{display: flex;justify-content: center;align-items: center;margin-top:45px;font-family: 'NotoSansKR'}
+.cert_area .foot h3{font-size: 24px;margin-right: 20px}
+.cert_wrap button{font-size: 14px;background: #2189ff;color: #fff;margin-top: 50px;display: inline-block;padding: 7px 50px;border-radius: 50px;}
+
+@page {
+  size:210mm 297mm; /*A4*/
+  margin:0mm
+ }
+
+@media print{
+	html, body {
+    margin:0;
+    padding:0;
+    page-break-after: avoid;
+    page-break-before: avoid
+  }
+	.cert_area{width: 100%}
+	.cert_wrap{padding: 0}
+	.tct{display: none}
+	.cert_area{padding: 120px 160px;background-size: 210mm}
+	.cert_area .date{margin-top: 80px}
+}
+
 @media all and (max-width:1390px){
 	.smart_green .right{width: 720px}
 	.curriculum .cur_list .item .etc{display: block;}
@@ -134,6 +210,10 @@
 	.edu_detail .left .thumb {height: auto}
 	.edu_detail .left .thumb img {height: auto}
 	.edu_detail .right{width: calc(100% - 370px)}
+	
+	/* 학습현황 */
+	.foot_banner{margin-top: 60px}
+	.foot_banner > div{width: calc(50% - 10px)}
 }
 
 
@@ -182,11 +262,65 @@
 	.table_style01 table th{font-size: 14px}
 	.table_style01 table td{padding: 10px;font-size: 13px}
 	.table_style01 .btn_style02	{padding: 3px 15px;white-space: nowrap}
+	
+	/* 학습현황 */
+	.es_tit{font-size: 22px}
+	.edu_status .sp_tit{font-size: 22px}
+	.edu_status .sp_tit:after{background-size: 620px;width: 620px}
+	.edu_status .table_style01 table,
+	.edu_status .table_style01 table tr,
+	.edu_status .table_style01 table tbody,
+	.edu_status .table_style01 table td{display: block;}
+	.edu_status .table_style01 table th,
+	.edu_status .table_style01 table colgroup{display: none}
+	.edu_status .table_style01 table,
+	.edu_status .table_style01 table tbody,
+	.edu_status .table_style01 table tbody tr,
+	.edu_status .table_style01 table tbody td{width: 100%;}
+	.edu_status .table_style01 table tbody td{border: 0;text-align: left;padding: 2px 10px}
+	.edu_status .table_style01 table tbody tr{border-bottom: 1px solid #c1c1c1;margin-bottom: 10px;padding-bottom: 10px}
+	.edu_status .table_style01 table tbody tr:first-child{border-top: 1px solid #c1c1c1}
+	.edu_status .table_style01 .btn_style01{text-align: center;font-size: 12px}
+	.edu_status .table_style01 table .tit{font-weight: bold}
+	.edu_status .table_style01 table .rate:before{content: '진도율 : ';display: inline-block;margin-right: 5px}
+	.edu_status .table_style01 table .class:before{content: '수강';display: block;font-weight: bold}
+	.edu_status .table_style01 table .admin:before{content: '학습관리';display: block;font-weight: bold}
+	.edu_status .table_style01 table .cert:before{content: '수료증';display: block;font-weight: bold}
+	.edu_status .table_style01 table .retake:before{content: '재수강';display: block;font-weight: bold}
+	
+	.foot_banner{display: block;}
+	.foot_banner > div{width: 100%;margin-bottom: 10px;padding: 40px 20px}
+	.foot_banner > div:last-child{margin-bottom: 0}
+	.foot_banner > div .tit{font-size: 18px}
+	.foot_banner > div .link{font-size: 15px}
+	.foot_banner > div.people{background-size: 220px}
+	.foot_banner > div.children{background-size: 220px}
+	
+	/* 페이징 */
+	.paging li.item{display: none}
+	.paging .pageState{display: block;}
+	
+}
+
+@media all and (max-width:640px){
+	/* 학습현황 */
+	.es_tit02{font-size: 18px;margin: 40px 0}
+	.edu_status .sp_tit{font-size: 18px;margin-bottom: 100px}
+	.edu_status .sp_tit:after{background-size: 460px;width: 460px;height: 90px;bottom: -70px}
+	.edu_search{flex-direction: column;}
+	.edu_search p{margin-right: 0;margin-bottom: 10px}
+	.edu_search button{margin-left: 0;margin-top: 15px}
+	
 }
 
 @media all and (max-width:480px){
 	/* 온라인교육과정 상세*/
 	.edu_detail .left .info_list{display: block;}
 	.edu_detail .left .info_list li{width: 100%;}
+	
+	/* 학습현황 */
+	.edu_status .sp_tit{margin-bottom: 80px;font-size: 16px}
+	.edu_status .sp_tit:after{background-size: contain;width: 100%}
+	.edu_search input{width: calc(50% - 17px)}
 
 }
