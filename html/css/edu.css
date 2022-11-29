@@ -30,10 +30,10 @@
 .smart_green .txt{font-size: 18px;color: #fff;margin: 5px 0 50px 0}
 .smart_green .left a{color: #88bd44;font-size: 14px;display: inline-block;border-bottom: 1px solid #88bd44}
 .smart_green .frame {height: 205px;}
-.smart_green .frame ul{}
-.smart_green .frame ul li {float: left;width:280px;margin: 0 20px 0 0;border-radius: 20px;}
-.smart_green .frame ul li a{display: block;border-radius: 20px;overflow: hidden}
-.smart_green .frame ul li img{display: block;height: 100%;width: 100%}
+.smart_green .frame ul{height: 100%}
+.smart_green .frame ul li {float: left;width:280px;margin: 0 20px 0 0;border-radius: 20px;height: 100%}
+.smart_green .frame ul li a{display: block;border-radius: 20px;overflow: hidden;height: 100%;}
+.smart_green .frame ul li img{display: block;height: 100%;width: 100%;height: 100%;}
 /* Scrollbar */
 .smart_green .scrollbar {margin-top: 40px;height: 5px;background: #e8e8e8;line-height: 0;border-radius: 5px;overflow: hidden;cursor: pointer}
 .smart_green .scrollbar .handle {width: 100px;height: 100%;background: #b8b8b8;cursor: pointer;}
@@ -261,8 +261,11 @@
 	.edu_main .visual_banner .controler{bottom: 5px}
 	.smart_green h3{font-size: 30px;}
 	.curriculum .cur_list .item:after{background-size: 15px !important;}
+	.smart_green{margin: 30px 0}
 	.smart_green .txt{font-size: 16px;}
 	.smart_green .left a{font-size: 13px}
+	.smart_green .frame{height: 146px}
+	.smart_green .frame ul li{width: 200px;}
 	.curriculum .cur_list{margin-top: 10px}
 	.curriculum .cur_list .item{width: calc(50% - 5px);margin-right: 10px;margin-top: 30px}
 	.curriculum .cur_list .item:nth-child(2n){margin-right: 0;}
@@ -318,12 +321,14 @@
 	.edu_status .table_style01 table tbody tr{border-bottom: 1px solid #c1c1c1;margin-bottom: 10px;padding-bottom: 10px}
 	.edu_status .table_style01 table tbody tr:first-child{border-top: 1px solid #c1c1c1}
 	.edu_status .table_style01 .btn_style01{text-align: center;font-size: 12px}
-	.edu_status .table_style01 table .tit{font-weight: bold}
+	.edu_status .table_style01 table .tit:before{content: '강좌명 : '}
+	.edu_status .table_style01 table .num:before{content: '번호 : ';display: inline-block;margin-right: 5px}
 	.edu_status .table_style01 table .rate:before{content: '진도율 : ';display: inline-block;margin-right: 5px}
-	.edu_status .table_style01 table .class:before{content: '수강';display: block;font-weight: bold}
-	.edu_status .table_style01 table .admin:before{content: '학습관리';display: block;font-weight: bold}
-	.edu_status .table_style01 table .cert:before{content: '수료증';display: block;font-weight: bold}
-	.edu_status .table_style01 table .retake:before{content: '재수강';display: block;font-weight: bold}
+	.edu_status .table_style01 table .class:before{content: '수강';display: block;}
+	.edu_status .table_style01 table .admin:before{content: '학습관리';display: block;}
+	.edu_status .table_style01 table .cert:before{content: '수료증';display: block;}
+	.edu_status .table_style01 table .retake:before{content: '재수강';display: block;}
+	.edu_status .table_style01 table .date:before{content: '학습기간 : ';display:inline-block;margin-right: 3px}
 	
 	.foot_banner{display: block;}
 	.foot_banner > div{width: 100%;margin-bottom: 10px;padding: 40px 20px}
