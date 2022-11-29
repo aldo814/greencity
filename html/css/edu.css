@@ -77,6 +77,7 @@
 .edu_sub .btn_style02{font-size: 13px;display: inline-block;background: #ddd;padding: 3px 40px;border-radius: 40px;background: #ddd;font-weight: 500}
 .edu_sub .blue_btn{background: #2189ff;color: #fff;}
 .edu_sub .gray_btn{background: #515151;color: #fff;}
+.edu_sub .white_btn{background: #fff;color: #1b1b1b;border: 1px solid #1b1b1b}
 .edu_sub .red_btn{background: #fa6105;color: #fff;}
 .edu_detail .right{display: flex;flex-direction: column}
 .edu_detail .right .tit{font-size: 30px;font-weight: bold}
@@ -193,6 +194,35 @@
 	.cert_area .date{margin-top: 80px}
 }
 
+
+
+/* 강의보기 */
+.lecture .wrap{width: 1580px;margin: auto}
+.lecture .top{background: #ededed;padding: 20px 0}
+.lecture .top .wrap{text-align: right}
+.lecture .content{margin-top: 100px;display: flex;justify-content: space-between}
+.lecture .content .chapter{width: 300px;border: 1px solid #c1c1c1}
+.lecture .content .chapter .tit{background: #2189ff;text-align: center;padding: 40px 30px}
+.lecture .content .chapter .tit p{color: #fff;font-size: 20px;font-weight: 500}
+.lecture .content .chapter .cp_list {padding: 15px 10px;}
+.lecture .content .chapter .cp_list li a{display: block;padding: 7px 10px;border-bottom: 1px solid #ededed;color: #666;font-size: 13px}
+.lecture .content .chapter .cp_list li a:hover,
+.lecture .content .chapter .cp_list li a:focus,
+.lecture .content .chapter .cp_list li a:active{text-decoration: underline}
+.lecture .video{width: calc(100% - 350px);} 
+.lecture .video .video_area{margin-bottom: 35px}
+.lecture .video .video_area > *{width: 100%}
+.lecture .video .cp_tit{font-size: 22px;margin:20px 0 30px 0}
+.lecture .down_area{background: #ededed;margin-top: auto;padding: 30px;display: flex;justify-content: center;align-items: center}
+.lecture .down_area p{text-align: center;margin: auto;max-width: calc(100% - 120px);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #666;font-size: 13px}
+.lecture .btn_wrap{width: calc(100% - 350px);margin-left: auto;text-align: center;margin-top: 35px}
+.lecture .btn_wrap a{padding: 8px 44px;font-weight: bold}
+.lecture .btn_wrap a + a{margin-left: 20px}
+
+@media all and (max-width:1580px){
+	.lecture .wrap{width: calc(100% - 40px);}
+}
+
 @media all and (max-width:1390px){
 	.smart_green .right{width: 720px}
 	.curriculum .cur_list .item .etc{display: block;}
@@ -214,6 +244,13 @@
 	/* 학습현황 */
 	.foot_banner{margin-top: 60px}
 	.foot_banner > div{width: calc(50% - 10px)}
+	
+	/* 강의보기 */
+	.lecture .content .chapter{width: 200px;}
+	.lecture .video,
+	.lecture .btn_wrap{width: calc(100% - 220px)}
+	.lecture .down_area{padding: 20px;justify-content: space-between}
+	.lecture .down_area p{margin: 0;}
 }
 
 
@@ -299,6 +336,17 @@
 	/* 페이징 */
 	.paging li.item{display: none}
 	.paging .pageState{display: block;}
+	
+	/* 강의보기 */
+	.lecture .content{flex-direction: column;margin-top: 30px}
+	.lecture .content .chapter{width: 100%;margin-bottom: 20px}
+	.lecture .content .chapter .tit{padding: 20px}
+	.lecture .content .chapter .tit p{font-size: 16px;}
+	.lecture .content .chapter .cp_list li a{font-size: 12px}
+	.lecture .content .chapter .cp_list li:last-child a{border-bottom: 0}
+	.lecture .video, .lecture .btn_wrap{width: 100%}
+	.lecture .video .cp_tit{font-size: 16px;margin: 10px 0 20px 0}
+	.lecture .video .video_area{margin-bottom: 20px}
 	
 }
 
