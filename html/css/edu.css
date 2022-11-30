@@ -130,6 +130,7 @@
 .edu_status .sp_tit:after{content: '';display: block;background: url(../images/edu/sp_bg.png) no-repeat;width: 649px;height: 132px;position: absolute;left: 50%;transform: translatex(-50%);bottom: -100px}
 .edu_status .table_style01 .btn_style01{width: 100px;display: inline-block;padding: 5px}
 
+
 /* 페이징 */
 .paging{display: flex;justify-content: center;margin-top: 50px;}
 .paging li {margin: 0 10px;}
@@ -138,7 +139,7 @@
 .paging li.active a:hover,
 .paging li.active a:active,
 .paging li.active a:focus{color: #1b1b1b;font-weight: bold;}
-.paging .pageState{display: none}
+.paging .pageState{display: none;font-size: 14px}
 .paging .pageState .curPage{color: #1b1b1b;font-weight: bold;}
 .paging .pageState .curPage:after{content: '/';margin:0 5px 0 8px}
 .paging .pageState .totPage{color: #777;}
@@ -160,6 +161,16 @@
 .edu_search input{border: 1px solid #bcc9d9;padding: 7px 10px;width: 130px;background: url(../images/edu/calender_btn.png) no-repeat #fff right 5px center}
 .edu_search button{background: #fff;margin-left: 25px;padding: 6px 40px;border: 1px solid #000;border-radius: 30px;font-size: 13px}
 .edu_search label{text-indent: -9999px;position: absolute;left: -9999px;width: 1px;height: 1px;overflow: hidden}
+
+/* date picker*/
+.ui-widget-header{background: #f1f1f1;border: 0;}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+.ui-button.ui-state-disabled:hover, 
+.ui-button.ui-state-disabled:active{border: 0;background: none;text-align: center;color: #555}
+.ui-datepicker .ui-datepicker-title select{padding: 5px;font-size: 14px}
 
 /* 수료증 */
 .cert_wrap {padding: 50px 0}
@@ -339,6 +350,7 @@
 	.foot_banner > div.children{background-size: 220px}
 	
 	/* 페이징 */
+	.paging {margin-top: 30px}
 	.paging li.item{display: none}
 	.paging .pageState{display: block;}
 	
@@ -376,4 +388,8 @@
 	.edu_status .sp_tit:after{background-size: contain;width: 100%}
 	.edu_search input{width: calc(50% - 17px)}
 
+}
+
+@media all and (max-width:280px){
+	.edu_search{padding: 20px 10px}
 }
