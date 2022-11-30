@@ -344,8 +344,8 @@
 	.foot_banner{display: block;}
 	.foot_banner > div{width: 100%;margin-bottom: 10px;padding: 40px 20px}
 	.foot_banner > div:last-child{margin-bottom: 0}
-	.foot_banner > div .tit{font-size: 18px}
-	.foot_banner > div .link{font-size: 15px}
+	.foot_banner > div .tit{font-size: 16px}
+	.foot_banner > div .link{font-size: 14px}
 	.foot_banner > div.people{background-size: 220px}
 	.foot_banner > div.children{background-size: 220px}
 	
