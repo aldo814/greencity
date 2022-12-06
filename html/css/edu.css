@@ -92,6 +92,7 @@
 .edu_detail .right .btn_wrap{display: flex;margin-top: auto}
 .edu_detail .right .learn_btn{background: #2189ff;color: #fff;font-size: 20px;font-weight: 500;height: 50px;line-height: 50px;width: calc(100% - 80px);display: inline-block;width: 500px;border-radius: 30px}
 .edu_detail .right .bmk_btn{background: url(../images/edu/bookmk.png) no-repeat #ededed center;width: 80px;height: 50px;display: inline-block;border-radius:30px;text-indent: -9999px}
+.edu_detail .right .bmk_btn.active{background: url(../images/edu/bookmk_active.png) no-repeat #555 center}
 
 .edu_sub .edu_tab{margin: 90px 0 40px 0}
 .edu_tab ul{display: flex;}
