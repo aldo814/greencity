@@ -408,6 +408,8 @@
 	.edu_list_top{height: 200px}
 	.edu_list_top .search_area{max-width: 620px;width: calc(100% - 40px);top: 100px;padding: 3px 20px}
 	.edu_sub .edu_list .img{height: 220px}
+	
+	.edu_sub .edu_list_btn{margin-top: 50px}
 }
 
 @media all and (max-width:640px){
