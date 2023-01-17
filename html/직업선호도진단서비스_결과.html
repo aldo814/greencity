@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 기존 css, js-->
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/fonts.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/common.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/jquery-ui.min.css">
+
+	<script src="https://kimguta.github.io/page/common/js/jquery-3.6.0.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/jquery-ui.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/puble_common.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/slick.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/common.js"></script>
+
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/app.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/index.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/aos.css">
+
+	<script src="https://kimguta.github.io/page/greencity/js/app.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/index.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/aos.js"></script>
+	<!--추가-->
+	<link rel="stylesheet" href="css/billboard.min.css">
+	<link rel="stylesheet" href="css/diag.css">
+	<script src="js/sly.js"></script>
+	<script src="js/run.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/billboard.js@1.11.0-next.1/dist/billboard.pkgd.min.js"></script>
+</head>
+
+<body>
+	<div class="job_diag diag_wrap">
+
+		<div class="inner">
+			<h3 class="diag_tit">
+				직업선호도진단 결과
+			</h3>
+			<div class="jd_result">
+				<ul class="jd_privacy">
+					<li>
+						<strong>성명</strong>
+						<p>강원도</p>
+					</li>
+					<li>
+						<strong>생애주기</strong>
+						<p>청년(18세~34세)</p>
+					</li>
+					<li>
+						<strong>검사일</strong>
+						<p>2022-12-27</p>
+					</li>
+				</ul>
+
+				<div class="mg70">
+					<div class="job_code">
+						<div class="txt">
+							<div class="code_area">
+								<!--
+					<div class="code_r code_name">R</div>
+					<div class="code_i code_name">I</div>
+					<div class="code_a code_name">A</div>-->
+								<div class="code_s code_name">S</div>
+								<div class="code_c code_name">C</div>
+							</div>
+							<div class="mb_table">
+							<table class="table_style02">
+								<caption class="hide">
+									직업선호도 진단결과
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col" class="code_r">R 현실형</th>
+										<th scope="col" class="code_i">I 탐구형 </th>
+										<th scope="col" class="code_a">A 예술형 </th>
+										<th scope="" class="code_s">S 사회형</th>
+										<th scope="col" class="code_e">E 진취형</th>
+										<th scope="col" class="code_c">C 사무형</th>
+										<th scope="col">합계</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tct">12</td>
+										<td class="tct">12</td>
+										<td class="tct">12</td>
+										<td class="tct">12</td>
+										<td class="tct">12</td>
+										<td class="tct">12</td>
+										<td class="tct">50</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						</div>
+						<h4 class="code_rs">
+							<!--
+					<span class="code_r">R</span>
+					<span class="code_i">I</span>
+					<span class="code_a">A</span>-->
+							강원도님의 대표 흥미 코드는 ‘<span class="code_s">S</span><span class="code_c">C</span>’ 입니다.
+						</h4>
+						<div class="chart_area">
+							<div class="job_chart">
+
+							</div>
+							<div class="btn_wrap">
+								<a href="javascript:vold(0)" class="gray_btn02 btn_style01" onClick="javascript:openModal('modal1');">흥미의 육각모형 해석 TIP</a>
+							</div>
+						</div>
+					</div>
+			
+			<!--흥미의 육각모형 해석 TIP 팝업-->
+			<div class="shadow"></div>
+		<div class="diag_pop w600 jt_pop modal1" >
+			<div class="dp_top">
+				<p>흥미의 육각모형 해석 TIP</p>
+			</div>
+			<div class="dp_cont">
+				<table class="table_style02">
+						<caption class="hide">흉미의 육각모형 해석 TIP</caption>
+						<colgroup>
+							<col style="width: 60px">
+							<col style="width: 60px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2" colspan="2"></th>
+								<th colspan="2">육각형의 모양</th>
+							</tr>
+							<tr>
+								<th>한쪽으로 찌그러진 모양</th>
+								<th>정육각형에 가까운 모양</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th rowspan="2">육각형<br>
+크기
+</th>
+						<th>크다</th>
+						<td>특정 분야에 뚜렷한 관심을 보입니다.
+본인의 성격, 능력, 경험 등이 관심분야와 
+조화로운지 살펴보세요</td>
+						<td>관심분야가 폭 넓은 경우입니다.
+능력, 성격, 경험 등을 고려하여 흥미분야를 
+좁혀보세요</td>
+							</tr>
+							<tr>
+						<th>작다
+</th>
+						<td>특정분야에 관심이 있기는 하나 그 정도가 
+작은 편입니다. 조금이라도 관심있는 분야에 
+대해 적극적인 탐색이 필요합니다</td>
+						<td>뚜렷한 관심분야가 없습니다. 본인의 
+관심사와 잘 할 수있는 일 등을 고려하며 
+작은 부분에서 부터 흥미분야를 찾아보세요
+</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+			<div class="bottm_close">
+				<a href="javascript:void(0);" onclick="close_pop()">닫기</a>
+			</div>
+		</div>
+		<!--흥미의 육각모형 해석 TIP 팝업-->
+		
+		<h4 class="f30">
+			유형 안내
+		</h4>
+		<!--job_type_wrap-->
+					<div class="job_type_wrap mt30">
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>
+								R
+									<strong>
+									현실형</strong>
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16 bold01">
+											실행/사물지향
+										</p>
+										<p class="f13 gray ">
+											분명하고, 체계적인 것을 좋아하고, 도구나 기계를 조작하는 활동이나 기술에 흥미 있음
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">기계</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">회계사무원, 조리사, 간호사, 보석감정사, 출판디자이너, 동물미용사, 피부관리사, 네일 아티스트, 치위생사, 학원강사, 여행안내원, 가전제품수리원, 항공기 조정사, 엔지니어</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">사교적 재능보다는 손 재능 및 기계적 소질이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">겸손하고 솔직하지만 독단적이고 고집이 센 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">기계나 도구 등의 조작
+
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">타인과의 상호작용
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">기계적 능력/현실적이고 신중한 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">눈에 보이는 성취에 대한 물질적 보상
+
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>
+									I
+									<strong>탐구형</strong>
+
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16">
+											사고/아이디어지향
+										</p>
+										<p class="f13 gray">
+											관찰적, 체계적이며 물리적, 생물학적, 문화적 현상의 창조적인 탐구를 수반하는 활동에 흥미 있음
+
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">연구</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">기자, 학원강사, 무용가, 감정평가사, 평론가, 인적자원전문가, 웹프로그래머, 컴퓨터애니메이터, 패션디자이너, 정보보호전문가, 정보시스템감리사, 전기공학기술자, 컴퓨터하드웨어 기술자 및 연구원, 생명과학연구원</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">대인관계 능력보다는 학술적 재능이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">지적이고 현학적이며 독립적이지만 내성적인 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">자연현상 및 사회현상의 탐구, 이해, 예측 및 통제
+
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">설득 및 영업 활동
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">학구적 능력/분석적이고 지적인 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">지식의 개발과 습득
+
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>A
+									<strong>예술형</strong>
+
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16">
+											창조/아이디어지향
+
+										</p>
+										<p class="f13 gray">
+											예술적 창조와 표현, 변화와 다양성을 선호하고 틀에 박힌 것을 싫어하며 모호하고, 자유롭고, 상징적인 활동에 흥미 있음
+
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">예술</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">주얼리디자이너, 플로리스트, 애니메이션기획자, 웹기획자, 캐릭터디자이너, 가수, 개그맨, 국악인, 미용사, 메이크업아티스트, 사진작가, 프로듀서, 큐레이터</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">사무적 재능보다는 혁신적이고 지적인 재능이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">유별나고 혼란스러워 보이며 예민하지만 창조적인 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">문학, 음악, 미술활동
+
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">틀에 박힌 일이나 규칙
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">예술적 능력/경험에 대해 개방적인 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">아이디어, 정서, 감정의 창조적 표현
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>
+									S
+									<strong>사회형</strong>
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16">
+											자선/사람지향
+										</p>
+										<p class="f14 gray">
+											타인의 문제를 듣고, 이해하고, 도와주고, 치료해주고, 봉사하는 활동에 흥미 있음
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">상담</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">직업상담사, 사회복지사, 보육교사, 쇼핑호스트, 스포츠강사, 여행가이드, 작업치료사, 편집기자, 놀이치료사, 유치원교사, 동물미용사, 방송대본작가, 고객상담원, 손해사정사</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">기계적 능력보다는 대인관계적 소질이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">이해심 많고 사교적이며, 동정적이며 이타적인 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">상담, 교육, 봉사활동
+
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">기계기술적 활동
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">대인지향적 능력/동정심과 참을성이 있는 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">타인의 복지와 사회적 서비스의 제공
+
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>
+									E
+									<strong>진취형</strong>
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16">
+											관리/과제지향
+										</p>
+										<p class="f13 gray">
+											조직의 목적과 경제적인 이익을 얻기 위해 타인을 지도, 계획, 통제, 관리하는 일과 그 결과로
+											얻어지는 명예, 인정, 권위에 흥미 있음
+
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">경영</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">홍보사무원, IT강사, 마케팅전문가, 행사기획자, 변호사, 아나운서, 보험사무원, 부동산중개인, 영양사, 헤드헌터, 직업군인</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">과학적 능력보다는 설득력 및 영업능력이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">열정적이고 외향적이며 모험적이지만 야심이 있는 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">설득, 지시, 지도활동</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">과학적, 지적, 추상적 주제
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">경영 및 영업 능력/대담하고 사교적인 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">경제적 성취와 사회적 지위
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+						<!--job_type_area-->
+						<div class="job_type_area">
+							<div class="tit">
+								<p>	
+									C
+								<strong>사무형</strong>
+								</p>
+							</div>
+							<div class="cont">
+								<div class="exp">
+									<div class="txt">
+										<p class="f16">
+											동조/자료지향
+
+										</p>
+										<p class="f13 gray">
+											정해진 원칙과 계획에 따라 자료를 기록, 정리, 조직하는 일을 좋아하고 체계적인 작업환경에서
+											사무적, 계산적 능력을 발휘하는 활동에 흥미 있음
+
+										</p>
+									</div>
+									<div class="btn_wrap">
+										<a href="javascript:void(0);">자세히 보기 +</a>
+									</div>
+								</div>
+
+								<ul class="cont_hide">
+									<li>
+										<strong class="f13">대표 분야</strong>
+										<p class="f13 gray">회계</p>
+									</li>
+									<li class="vt">
+										<strong class="f13">대표 직업</strong>
+										<p class="f13 gray">회계사, 연구원, 경리사무원, 의무기록사, 비서, 은행원, 프로그래머, 네트워크관리자, 반도체설계 기술자, 영상 녹화 및 편집기사, 시스템컨설턴트, 자동차조립 및 검사원, 정보시스템운영자</p>
+									</li>
+									<li>
+										<strong class="f13">자기 평가</strong>
+										<p class="f13 gray">예술적 재능보다는 비지니스 실무능력이 있다고 평가
+										</p>
+									</li>
+									<li>
+										<strong class="f13">타인 평가
+										</strong>
+										<p class="f13 gray">안정을 추구하고 규율적이지만 유능한 사람
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">선호 활동
+
+										</strong>
+										<p class="f13 gray">규칙을 만들거나 따르는 활동
+
+
+										</p>
+									</li>
+									<li>
+										<strong class="f13">회피 활동
+										</strong>
+										<p class="f13 gray">명확하지 않은 모호한 과제
+										</p>
+									</li>
+									<li>
+										<strong class="f13">적성/성격
+										</strong>
+										<p class="f13 gray">사무적 능력/현실적이고 성실한 성격
+										</p>
+									</li>
+									<li>
+										<strong class="f13">가치
+										</strong>
+										<p class="f13 gray">금전적 성취와 사회,사업,정치 영역에서의 권력 획득
+
+										</p>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<!--//job_type_area-->
+					</div>
+					<!--//job_type_wrap-->
+					
+		
+		
+		<h4 class="f30">추천 직업</h4>
+		<p class="f14 gray02">흥미코드 진단결과에 따른 추천직업이 표시됩니다. 회원님의 흥미유형이 유사한 종사자가 많은 직업을 추천해드립니다.</p>
+		<div class="tab_container">
+						<div class="tabs">
+							<ul class="tag_tab">
+								<li class="active">
+									<a href="javascript:vold(0)" data-tab="tab1">
+										행정사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab2">
+										생산관리사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab3">
+										보육교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab4">
+										총무사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab5">
+										방과후지도사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab6">
+										독서치료사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab7">
+										사회복지사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab8">
+									요양보호사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab9">
+										아동복지교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab10">
+										의료관광코디네이터
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab10">
+									학습매니저
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab11">
+										금융관련사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab12">
+										체험학습강사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab13">
+										보육교사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab14">
+										통계사무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab15">
+										객실승무원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab16">
+										취업알선원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab17">
+										독서치료사
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab18">
+										프랜차이즈매니저
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab18">
+										커리어코치
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab19">
+										복지시설생활지도원
+									</a>
+								</li>
+								<li>
+									<a href="javascript:vold:vold(0)" data-tab="tab20">
+										노인상담사
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--tab1-->
+						<div class="tab_content" id="tab1">
+							<p class="f20 tct bold">
+								프랜차이즈 매니저
+							</p>
+
+							<div class="table_style03 mt30">
+								<table>
+									<caption class="hide">프랜차이즈 매니저</caption>
+									<colgroup>
+										<col style="width:22%" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">직종</th>
+											<td class="tlt">음식료 서비스</td>
+										</tr>
+										<tr>
+											<th scope="row">개요</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>
+														패밀리레스토랑, 패스트푸드점, 외국음식전문점, 커피전문점 등 프랜차이즈 전문점의 운영과 영업,
+														종업원들을 총괄 관리함
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">수행업무</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>상점의 매출을 증진시키기 위해 영업전략을 수립함</li>
+													<li>일일 또는 월간, 연간 매출을 분석함</li>
+													<li>직원의 근무스케줄을 조정하고 업무를 총괄 지휘함</li>
+													<li>서비스교육과 위생교육 등을 실시함</li>
+													<li>상점의 홀 및 주방, 화장실 등의 청결상태를 점검함</li>
+													<li>고객과 문제가 생겼을 때 이를 해결함</li>
+													<li>고객의 불편사항을 파악하여 개선안을 수립함</li>
+													<li>입점 상점의 건물주/ 관리소장 등과의 협력적 관계를 구축함</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">근무형태</th>
+											<td class="tlt"></td>
+										</tr>
+										<tr>
+											<th scope="row">자격요건</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>비스직은 타고난 능력이 더 중요하므로 특별히 요구되는 자격이나 학력 제한은 없이 고졸 이상 학력이면 충분하지만
+														대규모 레스토랑, 패밀리 레스토랑 등의 경우는 전문대졸 이상으로 학력을 제한함</li>
+													<li>기본적인 외국어 능력이 필요함</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">일자리 현황</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>레스토랑, 호텔, 바, 커피전문점</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">임금수준</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>평균 연봉 2,000만원</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">취업현황</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>가족 단위의 외식문화가 정착되고 있어 이로 인한 패밀리레스토랑, 패스트푸드 등의 외식산업이 성장하고 있어 고용은
+														다소 증가할 것으로 전망됨</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">역량</th>
+											<td class="tlt">
+												<ul class="bar_list">
+													<li>고객지향,대인관계,영업/마케팅 능력,책임감,코칭스킬,손익마인드</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">자격증</th>
+											<td class="tlt"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+						<!--//tab1-->
+
+						<!--//tab2-->
+						<div class="tab_content  mt_50" id="tab2">
+							탭2
+						</div>
+						<!--//tab2-->
+
+						<!--//tab3-->
+						<div class="tab_content  mt_50" id="tab3">
+							탭3
+						</div>
+						<!--//tab3-->
+
+						<!--//tab4-->
+						<div class="tab_content  mt_50" id="tab4">
+							탭4
+						</div>
+						<!--//tab4-->
+
+						<!--//tab5-->
+						<div class="tab_content  mt_50" id="tab5">
+							탭5
+						</div>
+						<!--//tab5-->
+
+						<!--tab6-->
+						<div class="tab_content  mt_50" id="tab6">
+							탭6
+						</div>
+						<!--//tab6-->
+
+
+
+
+					</div>
+					<!--//tab-->
+
+			</div>
+		</div>
+			</div>
+	</div>
+	<script>
+		var chart = bb.generate({
+			data: {
+				x: "x",
+				columns: [
+					["x", "현실형", "탐구형", "예술형", "사회형", "진취형", "사무형"],
+					["data1", 18, 15, 12, 8, 12, 12],
+				],
+				type: "radar", // for ESM specify as: radar()
+				labels: false,
+				  colors: {
+					  data1: "#1d8dff",
+				  }
+			},
+			legend: {
+				show: false
+			},
+			radar: {
+				axis: {
+					max: 20,
+
+				},
+				level: {
+					depth: 3,
+					text: {
+						show: false
+					}
+				},
+				direction: {
+					clockwise: false
+				}
+			},
+			point: {
+				r: 4
+			},
+			tooltip: {
+				show: false
+			},
+
+			bindto: ".job_chart"
+		});
+	</script>
+</body></html>

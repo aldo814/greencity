@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 기존 css, js-->
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/fonts.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/common.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/jquery-ui.min.css">
+
+	<script src="https://kimguta.github.io/page/common/js/jquery-3.6.0.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/jquery-ui.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/puble_common.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/slick.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/common.js"></script>
+
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/app.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/index.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/aos.css">
+
+	<script src="https://kimguta.github.io/page/greencity/js/app.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/index.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/aos.js"></script>
+	<!--추가-->
+	<link rel="stylesheet" href="css/diag.css">
+	<script src="js/sly.js"></script>
+	<script src="js/run.js"></script>
+</head>
+<body>
+	<div class="inner ncs_diag diag_wrap">
+		<div class="inner">
+			<h3 class="diag_tit">
+			직업역량진단
+
+		</h3>
+		<div class="ja_step">
+						<div>
+							<div class="cont">
+								<p class="num">1</p>
+								<p class="f17">직종선택</p>
+							</div>
+							<div class="arrow">다음</div>
+						</div>
+
+						<div>
+							<div class="cont">
+								<p class="num">2</p>
+								<p class="f17">직업선택</p>
+							</div>
+							<div class="arrow">다음</div>
+						</div>
+
+						<div class="active">
+							<div class="cont">
+								<p class="num">3</p>
+								<p class="f17">직업역량진단</p>
+							</div>
+						</div>
+					</div>
+					<ul class="bar_list">
+						<li class="f13 gray02">총 20개 문항으로 구성됩니다.</li>
+						<li class="f13 gray02">아래 설문문항을 읽으시고, 정확하게 답변해주세요.</li>
+					</ul>
+					<div class="jc_list mg50">
+					<div class="item">
+						<div class="q">
+							<div class="tit">
+								<div class="jt_inner">
+									<p>Q. 시장환경분석</p>
+									<div class="more">
+										<a href="javascript:void(0)" class="more_btn" title="자세히보기">자세히보기</a>
+										<p>시장환경, 고객요구사항, 경쟁사현황 등의 현황분석을 통하여 전자상거래 사업의 내외부 환경을 분석하는 능력
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<table class="table_style01">
+						<colgroup>
+							<col style="width: 70%">
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+							<thead>
+								<tr>
+								</tr>
+								<tr class="border">
+									<th scope="col"></th>
+									<th scope="col">매우 그렇다</th>
+									<th scope="col">그렇다</th>
+									<th scope="col">보통이다</th>
+									<th scope="col">그렇지 않다</th>
+
+									<th scope="col">매우 그렇지 않다</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="mb_tit">1. 시장 자료들을 활용하여 시장의 내부환경, 외부환경 분석을 통해 시장의 특성과 핵심 변화 요인을 파악할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">2. 시장환경 분석 자료를 활용하여 목표 고객군의 기호 및 트렌드를 파악 할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">3. 경쟁 사 분석 자료를 활용하여 자사의 경쟁우위 요소(가격, 품질, 납기 등)를 정리하고 마케팅 전략에
+										반영할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="item">
+						<div class="q">
+							<div class="tit">
+								<div class="jt_inner">
+									<p>Q. 시장환경분석</p>
+									<div class="more">
+										<a href="javascript:void(0)" class="more_btn" title="자세히보기">자세히보기</a>
+										<p>시장환경, 고객요구사항, 경쟁사현황 등의 현황분석을 통하여 전자상거래 사업의 내외부 환경을 분석하는 능력
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<table class="table_style01">
+							<colgroup>
+							<col style="width: 70%">
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+							<thead>
+								<tr>
+								</tr>
+								<tr class="border">
+									<th scope="col"></th>
+									<th scope="col">매우 그렇다</th>
+									<th scope="col">그렇다</th>
+									<th scope="col">보통이다</th>
+									<th scope="col">그렇지 않다</th>
+
+									<th scope="col">매우 그렇지 않다</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="mb_tit">1. 시장 자료들을 활용하여 시장의 내부환경, 외부환경 분석을 통해 시장의 특성과 핵심 변화 요인을 파악할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">2. 시장환경 분석 자료를 활용하여 목표 고객군의 기호 및 트렌드를 파악 할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="mb_tit">3. 경쟁 사 분석 자료를 활용하여 자사의 경쟁우위 요소(가격, 품질, 납기 등)를 정리하고 마케팅 전략에
+										반영할 수 있다.</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd" name="ex_rds">
+											<label for="ex_rd">
+												<strong>1</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd02" name="ex_rds">
+											<label for="ex_rd02"><strong>2</strong>
+												<span class="mb_show">
+													그렇다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd03" name="ex_rds">
+											<label for="ex_rd03"><strong>3</strong>
+												<span class="mb_show">
+													보통이다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd04" name="ex_rds">
+											<label for="ex_rd04"><strong>4</strong>
+												<span class="mb_show">
+													그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+									<td class="check_area">
+										<div class="diag_checks">
+											<input type="radio" id="ex_rd05" name="ex_rds">
+											<label for="ex_rd05"><strong>5</strong>
+												<span class="mb_show">
+													매우 <br class="mb_br">그렇지않다
+												</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				<div class="step_btn">
+		<a href="#" class="btn_style02 bl_btn">다음 단계 →</a>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
