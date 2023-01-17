@@ -301,6 +301,10 @@
 .ncs_result .table_style02 th{font-weight: bold}
 .ncs_result .table_style02 td{padding: 20px 40px}
 
+.diag_result{background: #2189ff;color: #fff;padding: 40px 0}
+.diag_result .flex{display: flex;justify-content: space-between;align-items: center;}
+.diag_result a{margin-left: auto;color: #fff}
+
 @media all and (max-width:1390px){
 	/*직업선호도 진단*/
 	.job_diag .gray_box div{text-align: right;}
@@ -425,6 +429,9 @@
 	.ncs_result .flex .nr_cont{width: 100%;text-align: center;margin-top: 10px}
 	.ncs_result .table_style02{width: 100%;}
 	.ncs_result .table_style02 td{padding: 5px 10px}
+	.diag_result{padding: 30px 0}
+	.diag_result .flex{flex-direction: column;word-break: keep-all}
+	.diag_result a{margin-top: 10px}
 }
 
 @media all and (max-width:480px){
