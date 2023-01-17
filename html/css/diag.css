@@ -15,6 +15,7 @@
 .bold{font-weight: 600}
 .gray{color: #787878}
 .gray02{color: #666}
+.blue{color: #2189ff}
 .diag_tit{font-size: 30px;font-weight: bold;border-bottom: 2px solid #2189ff;padding-bottom: 10px;margin-bottom: 30px;display: flex;align-items: center}
 .diag_tit .f14{margin-left: 15px;font-weight: 500}
 .gray_box{background: #f5f5f5;border-radius: 20px;padding: 35px;}
@@ -220,7 +221,7 @@
 /* 직업역량진단_직업선택 */
 .ja_select02_wrap .f18{font-weight: 500}
 .ja_select02_wrap .ja_select02{margin-top: 20px;}
-.ja_select02_wrap .ja_select02 .f14{color: #133c72;font-weight: bold;}
+.ja_select02_wrap .ja_select02 .f14{font-weight: bold;}
 .ja_select02_wrap .ja_more{background: url(../images/diag/mg.png) no-repeat #494949  center;display: inline-block;width: 20px;height: 20px;text-indent: -9999px;border-radius: 50%;margin-left: 10px;}
 .ja_select02_wrap ul {display: flex;flex-wrap: wrap}
 .ja_select02_wrap ul li{margin-right: 30px;margin-top: 20px;display: flex;align-items: center}
