@@ -399,6 +399,10 @@
 	.ja_select > div:nth-child(5n){margin-right: auto}
 	.ja_select > div:nth-child(3n){margin-right: 0}
 	
+	/* 직업역량진단 진단하기*/
+	.jc_list .jt_inner {position: relative;}
+	.jc_list .jt_inner .more.active{width: 100%;right: 0;top: 30px;box-shadow:  0 1px 5px 1px rgba(0, 0, 0, 0.15);position: absolute}
+	
 	/*직업역량진단서비스 진단결과 */
 	.ja_privacy{margin-bottom: 40px}
 	.ja_chart_wrap.white_box{padding: 20px}
