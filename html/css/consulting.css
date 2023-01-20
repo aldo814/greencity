@@ -78,7 +78,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .job_aricle .orange{color: #ff7256}
 .job_aricle > div > a{display: block;width: 100%;height: 100%;}
 .job_aricle > div:last-child{margin-right: 0 !important}
-.job_aricle .tit{font-size: 1.8rem;font-weight: bold;}
+.job_aricle .tit{font-size: 18px;font-weight: bold;}
 .job_aricle .middle{border-bottom: 1px dashed #c7cee1;margin:16px 0;padding-bottom: 20px}
 .textCut2{overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp:2; -webkit-box-orient: vertical;line-height: 1.2em;height: 2.4em;}
 .job_aricle .tag{color: #1b1b1b;}
@@ -143,6 +143,16 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .m_paging .next{background: url(../images/consulting/next.png) no-repeat;width: 6px;height: 14px;display: block;}
 .m_paging .last{background: url(../images/consulting/last.png) no-repeat;width: 7px;height: 14px;display: block;}
 
+/* 자기소개서 작성 페이지 */
+.consulting_sub h2{text-align: center;font-size: 22px;font-weight: bold;margin-bottom: 50px}
+.consulting_sub .white_box{margin: 30px 0;border: 1px solid #d6d6d6;padding: 30px}
+.consulting_sub .ico_tit{font-size: 20px;font-weight: bold;position: relative;padding-left: 35px}
+.consulting_sub .ico_tit:before{content: '';display: block;background:#ddd;border-radius: 50%;width: 24px;height: 24px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
+.consulting_sub .ico_tit.it01:before{background: url(../images/consulting/ico_tit01.png) no-repeat #44af62 center}
+.consulting_sub .name_wrap{margin-top: 20px;display: flex;border-bottom: 1px solid #c2c2c2;padding-bottom: 10px;margin-bottom: 10px}
+.consulting_sub .wr_tit{font-size: 18px}
+.consulting_sub .name_wrap .wr_tit{margin-right: 20px;}
+.consulting_sub .name_wrap .cont {color: #535353}
 
 @media all and (max-width:1390px){
 	.consulting_wrap .visal{background-size: 450px}
@@ -185,6 +195,8 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 @media all and (max-width:768px){
 	.consulting_wrap .main_section01 h2{font-size: 22px}
 	.consulting_wrap .visal{margin-top: 30px;background-position: center bottom;padding: 30px  30px 120px 30px}
+	.consulting_wrap .visal p{font-size: 14px;margin-bottom: 20px}
+	.consulting_wrap .visal h3{font-size: 16px}
 	.consulting_wrap .review{margin: 30px 0}
 	
 	.consulting_wrap .review_count_wrap{padding: 30px 0}
@@ -236,10 +248,23 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .cs_status .table-list .btn_wrap{position: absolute;right: 0;top: 15px}
 	.m_paging{display: flex;}
 	.paging{display: none}
+	.consulting_wrap .appendix .ico_tab{margin-bottom: 15px}
+	.consulting_wrap .appendix .ico_tab li{font-size: 15px;margin-right: 15px}
+	.consulting_wrap .appendix .js_wrap{padding: 20px;}
+	.consulting_wrap .appendix .js_wrap .job_select p{font-size: 16px}
+	.consulting_wrap .appendix .js_wrap .job_select ul li{font-size: 14px}
+	.gray_border{padding: 20px}
+	.job_aricle .top {font-size: 14px}
+	.job_aricle .tit{font-size: 16px}
+	.job_aricle .bottom{font-size: 14px}
+	.consulting_wrap .cs_step .txt li{font-size: 14px}
+	.consulting_wrap .cs_info{padding: 20px}
+	.consulting_wrap .cs_info p{font-size: 14px}
+	.consulting_wrap .cs_status .table-list a{font-size: 14px}
 }
 
 @media all and (max-width:480px){
-	.consulting_wrap .main_section01 h2{word-break: keep-all}
+	.consulting_wrap .main_section01 h2{word-break: keep-all;font-size: 18px}
 	consulting_wrap .visal{background-size: 280px}
 	.consulting_wrap .review .flex{display: block;}
 	.consulting_wrap .review .item{padding: 30px 20px}
@@ -249,4 +274,11 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .apply_area h3{word-break: keep-all}
 	.consulting_wrap .apply_area .flex .item{width: 100%;margin-top: 30px}
 	.consulting_wrap .apply_area .flex .item:nth-child(2){margin-top: 30px}
+	.consulting_wrap .review .slick-current .txt p{font-size: 14px !important}
+	.consulting_wrap .review{padding: 0}
+	.consulting_wrap .review .flex .tag span{font-size: 13px}
+	.consulting_wrap .review .slick-dots li{margin: 0 5px}
+	.consulting_wrap .review .slick-dots li button{width: 10px;height: 10px;border-radius: 50%;background: #d6d6d6;text-indent: -9999px;}
+	.consulting_wrap .review .item{box-shadow: none}
+	.consulting_wrap .review .slick-dots li.slick-active button{background: #2189ff}
 }
