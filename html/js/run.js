@@ -168,6 +168,35 @@
 			moveinner04.removeClass("off");
 		}
 	});
+	 
+	 /*자소서 컨설팅*/
+	 $('.review').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  autoplaySpeed:5000,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+	 
+	 $('.scrollbar').mCustomScrollbar({ 
+        theme:"dark-3"});
  });
 
 /* 인쇄 */
