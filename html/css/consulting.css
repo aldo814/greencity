@@ -173,7 +173,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub .ip_txt::placeholder{color: #cccccc}
 .consulting_sub .white_tit{display: flex;align-items: center;}
 .consulting_sub .white_tit .ico_tit{margin-right: 10px}
-.consulting_sub .white_tit .ip_txt{width: calc(100% - 78px)}
+.consulting_sub .white_tit .ip_txt{width: calc(100% - 80px)}
 .consulting_sub .item{margin-top: 30px}
 .consulting_sub .item:nth-child(2){margin-top: 0}
 .consulting_sub .cs_tit{display: flex;align-items: center;margin: 10px 0}
