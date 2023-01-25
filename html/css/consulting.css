@@ -153,7 +153,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub .ico_tit.it02:before{background: url(../images/consulting/ico_tit02.png) no-repeat #44af62 center}
 .consulting_sub .ico_tit.it03:before{background: url(../images/consulting/ico_tit03.png) no-repeat #44af62 center}
 .consulting_sub .ico_tit.it04:before{background: url(../images/consulting/ico_tit04.png) no-repeat #1181ff center}
-.consulting_sub .name_wrap{margin-top: 20px;display: flex;border-bottom: 1px solid #c2c2c2;padding-bottom: 10px;margin-bottom: 10px;}
+.consulting_sub .name_wrap{margin-top: 20px;display: flex;border-bottom: 1px solid #c2c2c2;padding-bottom: 10px;margin-bottom: 10px;align-items: center}
 .consulting_sub .name_wrap .date{display: flex;margin-left: auto;}
 .consulting_sub .wr_tit{font-size: 18px;font-weight: 400}
 .consulting_sub .wr_txt{color: #535353;font-size: 18px}
@@ -193,7 +193,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 /* 자기소개서 작성완료 */
 .consulting_sub .select_result{display: flex;}
 .consulting_sub .select_result p + p{margin-left: 30px}
-.consulting_sub .white_tit .wr_txt{width: calc(100% - 78px)}
+.consulting_sub .white_tit .wr_txt{width: calc(100% - 80px)}
 .consulting_sub .cs_tit .wr_txt{width: calc(100% - 100px)}
 .consulting_sub .wr_cont{padding: 15px 10px}
 .consulting_sub .cs_result_box .item{border-top: 1px dashed #d6d6d6;padding-top: 20px;margin-top: 20px}
@@ -226,6 +226,12 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_score .item:first-child{margin-bottom: 0}
 .consulting_score .ss_tit{font-size: 18px;font-weight: bold;width: 180px;margin-right: 20px}
 .consulting_score .ip_txt{width: calc(100% - 200px)}
+
+/* 취업진로상담_메인 */
+.employ_main .emp_visal{background: url(../images/consulting/emp_visal.png) no-repeat #fdbf53 right;padding: 100px  80px;border-radius: 30px;}
+.employ_main .emp_visal h3{font-size: 30px;color: #fff;font-weight: bold}
+.employ_main .emp_info{background: #f0f6f6; }
+.employ_main .emp_info .emp_apply{background: #065643;color: #fff;display: flex;}
 
 @media all and (max-width:1390px){
 	.consulting_wrap .visal{background-size: 450px}
