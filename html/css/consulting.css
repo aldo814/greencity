@@ -224,7 +224,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_score .item:nth-child(1){margin-top: 0}
 .consulting_score .item:nth-child(2){margin-top: 15px}
 .consulting_score .item:first-child{margin-bottom: 0}
-.consulting_score .ss_tit{font-size: 18px;font-weight: bold;width: 180px;margin-right: 20px}
+.consulting_score .ss_tit{font-size: 18px;font-weight: bold;width: 200px;}
 .consulting_score .ip_txt{width: calc(100% - 200px)}
 
 /* 취업진로상담_메인 */
