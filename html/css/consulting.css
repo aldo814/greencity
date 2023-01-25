@@ -389,7 +389,6 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .apply_area .flex .item{width: 100%;margin-top: 30px}
 	.consulting_wrap .apply_area .flex .item:nth-child(2){margin-top: 30px}
 	.consulting_wrap .review .slick-current .txt p{font-size: 14px !important}
-	.consulting_wrap .review{padding: 0}
 	.consulting_wrap .review .flex .tag span{font-size: 13px}
 	.consulting_wrap .review .slick-dots li{margin: 0 5px}
 	.consulting_wrap .review .slick-dots li button{width: 10px;height: 10px;border-radius: 50%;background: #d6d6d6;text-indent: -9999px;}
