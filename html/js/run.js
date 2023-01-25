@@ -187,8 +187,6 @@
     {
       breakpoint: 768,
       settings: {
-		arrows:false,
-		dots:true,
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1
@@ -199,6 +197,44 @@
 	 
 	 $('.scrollbar').mCustomScrollbar({ 
         theme:"dark-3"});
+	 
+	// 별점 select
+	$(".score_select .selected_option a").click(function () {
+		var $options = $(this).parent().siblings('.options');
+		$options.toggle();
+		$options.addClass('show');
+		$(this).parent().toggleClass('show');
+	});
+
+	//옵션 선택 및 선택 후 옵션 숨기기
+	$(".score_select .options li").click(function () {
+		var $options = $(this).parent().siblings('.options')
+		var text = $(this).html();
+		//$(".drop-down .selected a span").html(text);
+		//$(".drop-down .options ul").hide();
+
+		var $selected = $(this).closest('.options').siblings('.selected_option');
+		$selected.find('a').html(text);
+		$options.removeClass('show');
+		$(this).parent().parent().find('.selected_option').removeClass('show');
+
+		$(this).closest('ul').hide();
+	});
+
+
+	//페이지의 다른 위치를 클릭하면 옵션 숨기기
+	$(document).bind('click', function (e) {
+		var $options = $(this).parent().siblings('.options');
+		var $clicked = $(e.target);
+		if (!$clicked.parents().hasClass("score_select")) {
+			$(".score_select .options").hide();
+			$options.removeClass('show');
+			$('.score_select .selected_option').removeClass('show');
+
+		}
+	});
+	 
+	 
  });
 
 /* 인쇄 */

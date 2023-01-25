@@ -39,7 +39,140 @@
 				</h3>
 				<div class="name_wrap">
 					<p class="wr_tit">신청자명</p>
-					<p class="name">홍길동</p>
+					<p class="cont">홍길동</p>
+				</div>
+				<table class="write_table">
+					<caption class="hide">기본정보</caption>
+					<colgroup>
+						<col style="width: 70px">
+						<col style="width: 190px">
+						<col style="width: 90px">
+						<col style="width: 190px">
+						<col style="width: 90px">
+						<col style="width: 190px">
+						<col style="width: 120px">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" class="wr_tit">
+								<label for="area">지역</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="area" name="area">
+									<option>고성군</option>
+								</select>
+							</td>
+							<th scope="row" class="wr_tit">
+								<label for="state">취업상태</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="state" name="state">
+									<option>구직자</option>
+								</select>
+							</td>
+
+							<th scope="row" class="wr_tit">
+								<label for="field">취업분야</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="field" name="field">
+									<option>대기업</option>
+								</select>
+							</td>
+
+							<th scope="row" class="wr_tit">
+								<label for="term">구직준비기간</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="term" name="term">
+									<option>3개월</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="wr_tit">
+								<label for="age">연령</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="age" name="age">
+									<option>20대</option>
+								</select>
+							</td>
+							<th scope="row" class="wr_tit">
+								<label for="gender">성별</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="gender" name="gender">
+									<option>여성</option>
+								</select>
+							</td>
+
+							<th scope="row" class="wr_tit">
+								<label for="serial">직렬</label>
+							</th>
+							<td colspan="3" class="wr_txt colspan3">
+								<div class="select_wrap">
+									<select class="select_style01" id="serial" name="serial">
+										<option>선택</option>
+									</select>
+									<label class="hide" for="serial02">직렬 2depth</label>
+									<select class="select_style01" id="serial02" name="serial02">
+										<option>선택</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="white_box">
+				<div class="white_tit">
+					<h3 class="ico_tit it02">
+						<label for="tit">제목</label>
+					</h3>
+					<input type="text" placeholder="[분야 또는 기업명] 제목을 입력하세요(100자 미만) EX) [000전자]우수한 인재로 거듭나는 재능 넘치는 일꾼입니다!" class="ip_txt" id="tit">
+				</div>
+			</div>
+			<div class="white_box">
+				<h3 class="ico_tit it03">자기소개서(항목 및 내용) </h3>
+				<div class="item">
+					<div class="cs_tit">
+						<p class="wr_tit">
+							<label for="cs_title">항목(제목)</label>
+						</p>
+						<input type="text" class="ip_txt" placeholder="제목을 입력해주세요." id="cs_title">
+						<a href="#" class="del_btn">- 삭제</a>
+					</div>
+					<p class="wr_tit">
+						<label for="cs_cont">내용입력</label>
+					</p>
+					<textarea class="ip_txt" id="cs_cont"></textarea>
+					<p class="count">글자수 0000자</p>
+				</div>
+				<div class="item">
+					<div class="cs_tit">
+						<p class="wr_tit">
+							<label for="cs_title">항목(제목)</label>
+						</p>
+						<input type="text" class="ip_txt" placeholder="제목을 입력해주세요." id="cs_title">
+						<a href="#" class="del_btn">- 삭제</a>
+					</div>
+					<p class="wr_tit">
+						<label for="cs_cont">내용입력</label>
+					</p>
+					<textarea class="ip_txt" id="cs_cont"></textarea>
+					<p class="count">글자수 0000자</p>
+				</div>
+				<div class="add_btn">
+					<a href="#">+ 항목추가</a>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<p class="left">※ 컨설팅 신청 후, 작성 내용을 수정하실 수 없습니다. 이점 유의하여 신청하시기 바랍니다.</p>
+				<div class="right">
+					<a href="#" class="bl_btn">임시 저장</a>
+					<a href="#" class="blue_btn">컨설팅 신청</a>
 				</div>
 			</div>
 		</div>

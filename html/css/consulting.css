@@ -1,3 +1,4 @@
+.consulting_wrap .hide{display: block;position: absolute;left: -9999px;text-indent: -9999px}
 .consulting_wrap .main_section01 h2{text-align: center;font-size: 30px;font-weight: 400;line-height: 1.8}
 .consulting_wrap .main_section01 h2 strong{box-shadow: 0 -8px 0 #ffe400 inset}
 .consulting_wrap .main_section01 h2 span{position: relative;display: inline-block}
@@ -149,10 +150,82 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub .ico_tit{font-size: 20px;font-weight: bold;position: relative;padding-left: 35px}
 .consulting_sub .ico_tit:before{content: '';display: block;background:#ddd;border-radius: 50%;width: 24px;height: 24px;position: absolute;left: 0;top: 50%;transform: translateY(-50%)}
 .consulting_sub .ico_tit.it01:before{background: url(../images/consulting/ico_tit01.png) no-repeat #44af62 center}
-.consulting_sub .name_wrap{margin-top: 20px;display: flex;border-bottom: 1px solid #c2c2c2;padding-bottom: 10px;margin-bottom: 10px}
-.consulting_sub .wr_tit{font-size: 18px}
+.consulting_sub .ico_tit.it02:before{background: url(../images/consulting/ico_tit02.png) no-repeat #44af62 center}
+.consulting_sub .ico_tit.it03:before{background: url(../images/consulting/ico_tit03.png) no-repeat #44af62 center}
+.consulting_sub .ico_tit.it04:before{background: url(../images/consulting/ico_tit04.png) no-repeat #1181ff center}
+.consulting_sub .name_wrap{margin-top: 20px;display: flex;border-bottom: 1px solid #c2c2c2;padding-bottom: 10px;margin-bottom: 10px;}
+.consulting_sub .name_wrap .date{display: flex;margin-left: auto;}
+.consulting_sub .wr_tit{font-size: 18px;font-weight: 400}
+.consulting_sub .wr_txt{color: #535353;font-size: 18px}
 .consulting_sub .name_wrap .wr_tit{margin-right: 20px;}
 .consulting_sub .name_wrap .cont {color: #535353}
+.consulting_sub .write_table{width: 100%}
+.consulting_sub .write_table th{padding: 15px;text-align: left;}
+.consulting_sub .select_style01{max-width: 190px;width: 100%}
+.consulting_sub  
+.select_style01 {-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/consulting/select_arrow.png) right 10px center no-repeat;border: 1px solid #c2c2c2;padding:7px 30px 7px 10px;font-size: 15px;color: #535353}
+.select_style01::-ms-expand {display: none;}
+.consulting_sub .select_wrap{display: flex;}
+.consulting_sub .select_wrap select{margin-right: 10px}
+.consulting_sub .select_wrap select:last-child{margin-right: 0}
+.consulting_sub .ip_txt{border: 1px solid #c2c2c2;padding: 10px 10px;font-size: 15px}
+.consulting_sub textarea.ip_txt{resize: none;width: 100%;min-height: 200px}
+.consulting_sub .ip_txt::placeholder{color: #cccccc}
+.consulting_sub .white_tit{display: flex;align-items: center;}
+.consulting_sub .white_tit .ico_tit{margin-right: 10px}
+.consulting_sub .white_tit .ip_txt{width: calc(100% - 78px)}
+.consulting_sub .item{margin-top: 30px}
+.consulting_sub .item:nth-child(2){margin-top: 0}
+.consulting_sub .cs_tit{display: flex;align-items: center;margin: 10px 0}
+.consulting_sub .cs_tit .wr_tit{width: 90px}
+.consulting_sub .cs_tit .del_btn{background: #8c8c8c;color: #fff;padding:5px 10px;width: 155px;text-align: center;font-size: 18px}
+.consulting_sub .cs_tit .ip_txt{width:calc(100% - 245px);margin-right: 50px}
+.consulting_sub .count{font-weight: bold;}
+.consulting_sub .add_btn {text-align: right}
+.consulting_sub .add_btn a{background: #43af61;color: #fff;padding:5px 10px;width: 155px;text-align: center;font-size: 18px;display: inline-block}
+.consulting_sub .btn_wrap{display: flex;}
+.consulting_sub .btn_wrap .left{color: #ff0000;font-size: 16px}
+.consulting_sub .btn_wrap .right{margin-left: auto}
+.consulting_sub .btn_wrap .bl_btn{color: #2189ff;color: #2189ff;font-size: 18px;padding: 10px 45px;border-radius: 30px}
+.consulting_sub .btn_wrap .blue_btn{font-size: 18px;padding: 10px 45px}
+.consulting_sub .btn_wrap a + a{margin-left: 10px}
+
+/* 자기소개서 작성완료 */
+.consulting_sub .select_result{display: flex;}
+.consulting_sub .select_result p + p{margin-left: 30px}
+.consulting_sub .white_tit .wr_txt{width: calc(100% - 78px)}
+.consulting_sub .cs_tit .wr_txt{width: calc(100% - 100px)}
+.consulting_sub .wr_cont{padding: 15px 10px}
+.consulting_sub .cs_result_box .item{border-top: 1px dashed #d6d6d6;padding-top: 20px;margin-top: 20px}
+.consulting_sub .cs_result_box .item:nth-child(2){margin-top: 0;padding-top: 0;border-top: 0}
+.consulting_sub .answer .wr_txt{margin-top: 20px}
+.score_select{width:240px;position: relative;z-index: 55}
+.score_select .selected_option{background: url(../images/consulting/select_arrow.png) no-repeat right 20px center #fff;display: block;padding: 7px 15px;border: 1px solid #c2c2c2;box-sizing: border-box;}
+.score_select .selected_option a{display: block;width: 100%;height: 100%;}
+.score_select ul{background: #fff;position: absolute;top: 35px;left: 0; border-radius: 0 0 8px 8px;width: 100%;display: none;padding-top: 5px;border: 2px solid #fff;box-sizing: border-box}
+.score_select ul li {padding: 8px 15px}
+.score_select *:hover,
+.score_select *:active,
+.score_select *:focus {transition: all 0s !important}
+.score_select ul li:hover,
+.score_select ul li:active,
+.score_select ul li:focus{background: rgba(199, 206, 225, 0.22)}
+.score_select ul li:last-child{margin-bottom: 0}
+.score_select ul li a{display: block;width: 100%;height: 100%;}
+.score_select .star_area{background: url(../images/consulting/star_bg.png) no-repeat left center;width: 146px;height: 24px;position: relative;}
+.score_select .star_area .value{background: url(../images/consulting/star_area.png) no-repeat left center;height: 100%;position: absolute;left: 0;top: 0;}
+.score_select .star_area em {text-indent: -99999px;display: inline-block;}
+
+.score_select .selected_option.show{}
+.score_select ul.show {display: block;border: 1px solid #c2c2c2;border-top: 0}
+.score_select .hid {display: none;border: 0;}
+.consulting_score{background: #fffdc8;}
+.consulting_score .item{display: flex;align-items: center;}
+.consulting_score .item:nth-child(1){margin-top: 0}
+.consulting_score .item:nth-child(2){margin-top: 15px}
+.consulting_score .item:first-child{margin-bottom: 0}
+.consulting_score .ss_tit{font-size: 18px;font-weight: bold;width: 180px;margin-right: 20px}
+.consulting_score .ip_txt{width: calc(100% - 200px)}
 
 @media all and (max-width:1390px){
 	.consulting_wrap .visal{background-size: 450px}
@@ -190,6 +263,19 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .cs_step .flex .item:nth-child(2){margin-top: 0}
 	.consulting_wrap .cs_step .flex .item:nth-child(2n) {margin-right: 0}
 	.consulting_wrap .cs_info:after{display: none}
+	
+	/* 자기소개서 작성 페이지 */
+	.consulting_sub .write_table,
+	.consulting_sub .write_table tr,
+	.consulting_sub .write_table td,
+	.consulting_sub .write_table th,
+	.consulting_sub .write_table tbody{display: block}
+	.consulting_sub .write_table tbody{overflow: hidden}
+	.consulting_sub .write_table th{width: 110px;float: left;padding: 0}
+	.consulting_sub .write_table td{width: calc(50% - 110px);float: left;margin-bottom: 15px}
+	.consulting_sub .write_table .colspan3{width: calc(100% - 110px)}
+	.consulting_sub .btn_wrap{display: block}
+	.consulting_sub .btn_wrap .right{text-align: right;margin-top: 20px}
 }
 
 @media all and (max-width:768px){
@@ -261,6 +347,34 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .cs_info{padding: 20px}
 	.consulting_wrap .cs_info p{font-size: 14px}
 	.consulting_wrap .cs_status .table-list a{font-size: 14px}
+	
+	/* 자기소개서 작성 */
+	.consulting_sub h2{margin-bottom: 30px}
+	.consulting_sub .ico_tit{font-size: 18px}
+	.consulting_sub .write_table th{float: none;width: 100%}
+	.consulting_sub .write_table td{float: none;width: 100%;margin-top: 10px}
+	.consulting_sub .select_style01{max-width: 100%}
+	.consulting_sub .write_table .colspan3{width: 100%}
+	.consulting_sub .white_tit{display: block;}
+	.consulting_sub .white_tit .ip_txt{width: 100%;margin-top: 10px}
+	.consulting_sub .wr_tit,
+	.consulting_sub .wr_txt{font-size: 15px}
+	.consulting_sub .cs_tit .wr_tit{display: none}
+	.consulting_sub .cs_tit .ip_txt{width: calc(100% - 80px);margin-right: 10px;padding: 8px 10px}
+	.consulting_sub .cs_tit .del_btn{width: 70px;font-size: 15px}
+	.consulting_sub .add_btn a{width: 90px;font-size: 15px}
+	.consulting_sub .btn_wrap .left{font-size: 14px;word-break: keep-all}
+	.consulting_sub .btn_wrap .right{text-align: center}
+	.consulting_sub .btn_wrap .bl_btn,
+	.consulting_sub .btn_wrap .blue_btn{font-size: 15px;padding: 10px 30px}
+	.consulting_sub .white_box{padding: 20px}
+	
+	/* 자기소개서 완료 */
+	.consulting_score .item{display: block;}
+	.consulting_score .ss_tit{font-size: 15px;margin-bottom: 10px;}
+	.score_select{width: 100%;}
+	.consulting_score .ss_cont{font-size: 15px}
+	.consulting_score .ip_txt{width: 100%}
 }
 
 @media all and (max-width:480px){
