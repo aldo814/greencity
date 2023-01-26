@@ -372,6 +372,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.employ_main .emp_info .flex > div:nth-child(-n+2){margin-top: 0}
 	.employ_main .emp_info .flex .circle{margin: auto}
 	.employ_main .emp_process .flex > div{width: calc(33.333% - 20px);margin-right: 30px}
+	.date_flex{align-items: flex-start}
 	
 }
 
