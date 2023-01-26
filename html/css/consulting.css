@@ -296,7 +296,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 
 /* 취업진로상담 현황 */
 .emp_current .cs_status .top{margin-bottom: 50px}
-.emp_current .cs_status .top h3{font-size: 22px;}
+.emp_current .cs_status .top h3{font-size: 22px;margin-top: 5px}
 .emp_current .cs_status .top a{background: #2189ff;color: #fff;padding: 5px 30px;border-radius: 30px;margin-left: 30px;font-size: 15px}
 .emp_current .cs_status .table_list_top li{font-size: 13px;color: #666666;margin-right: 30px;padding-right: 0}
 .emp_current .cs_status .table_list_top li:after{display: none}
