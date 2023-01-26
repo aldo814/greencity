@@ -1,4 +1,6 @@
 .consulting_wrap .hide{display: block;position: absolute;left: -9999px;text-indent: -9999px}
+.consulting_wrap .red{color: #ff0000}
+.consulting_wrap .bold{font-weight: 600 !important}
 .consulting_wrap .main_section01 h2{text-align: center;font-size: 30px;font-weight: 400;line-height: 1.8}
 .consulting_wrap .main_section01 h2 strong{box-shadow: 0 -8px 0 #ffe400 inset}
 .consulting_wrap .main_section01 h2 span{position: relative;display: inline-block}
@@ -158,9 +160,9 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub .wr_tit{font-size: 18px;font-weight: 400}
 .consulting_sub .wr_txt{color: #535353;font-size: 18px}
 .consulting_sub .name_wrap .wr_tit{margin-right: 20px;}
-.consulting_sub .name_wrap .cont {color: #535353}
+.consulting_sub .name_wrap .cont {color: #535353;font-size: 18px}
 .consulting_sub .write_table{width: 100%}
-.consulting_sub .write_table th{padding: 15px;text-align: left;}
+.consulting_sub .write_table th{padding: 15px 0;text-align: left;}
 .consulting_sub .select_style01{max-width: 190px;width: 100%}
 .consulting_sub  
 .select_style01 {-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/consulting/select_arrow.png) right 10px center no-repeat;border: 1px solid #c2c2c2;padding:7px 30px 7px 10px;font-size: 15px;color: #535353}
@@ -188,6 +190,8 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub .btn_wrap .right{margin-left: auto}
 .consulting_sub .btn_wrap .bl_btn{color: #2189ff;color: #2189ff;font-size: 18px;padding: 10px 45px;border-radius: 30px}
 .consulting_sub .btn_wrap .blue_btn{font-size: 18px;padding: 10px 45px}
+.consulting_sub .btn_wrap .bl_btn,
+.consulting_sub .btn_wrap .blue_btn{width: 210px;display: inline-block;text-align: center}
 .consulting_sub .btn_wrap a + a{margin-left: 10px}
 
 /* 자기소개서 작성완료 */
@@ -228,10 +232,58 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_score .ip_txt{width: calc(100% - 200px)}
 
 /* 취업진로상담_메인 */
-.employ_main .emp_visal{background: url(../images/consulting/emp_visal.png) no-repeat #fdbf53 right;padding: 100px  80px;border-radius: 30px;}
+.emp_tit {margin-bottom: 60px;text-align: center;}
+.emp_tit h3{font-size: 34px;font-weight: bold;}
+.emp_tit p{font-size: 20px;color: #1b1b1b}
+.employ_main .emp_visal{background: url(../images/consulting/emp_visal.png) no-repeat #fdbf53 right;padding: 100px  80px;border-radius: 30px;margin-bottom: 120px}
 .employ_main .emp_visal h3{font-size: 30px;color: #fff;font-weight: bold}
-.employ_main .emp_info{background: #f0f6f6; }
-.employ_main .emp_info .emp_apply{background: #065643;color: #fff;display: flex;}
+.employ_main .emp_apply{background: #065643;color: #fff;display: flex;padding: 30px 110px 30px 220px;justify-content: space-between;border-radius: 50px;align-items: center;margin-top: -60px}
+.employ_main .emp_apply p{font-size: 30px;font-weight: bold}
+.employ_main .emp_apply span{color: #fdbf53;font-size: 35px;}
+.employ_main .emp_apply a{color: #065643;font-size: 18px;background: #fff;padding: 5px 30px;border-radius: 20px}
+.employ_main .emp_info{background: #f0f6f6;margin-top:-60px;padding: 150px 0 120px 0 }
+.employ_main .emp_info .flex{display: flex;justify-content: center;text-align: center;}
+.employ_main .emp_info .flex > div{margin-right: 80px}
+.employ_main .emp_info .flex > div:last-child{margin-right: 0}
+.employ_main .emp_info .flex .circle{display: block;width: 170px;height: 170px;display: flex;justify-content: center;align-items: center;background: #14ad89;border-radius: 50%;color: #fff;font-size: 34px;font-weight: bold}
+.employ_main .emp_info .flex .tit{font-size: 20px;font-weight: bold;}
+.employ_main .emp_info .flex .desc{font-size: 13px;color: #666666}
+.employ_main .emp_info .flex .tit:before{content: '';display: block;width: 1px;height: 60px;border-left: 1px dashed #adb2b2;margin: 10px auto}
+.employ_main .emp_info .flex > div:nth-child(1) .circle{background: url(../images/consulting/note.png) no-repeat center #d8e6e4}
+.employ_main .emp_info .flex > div:nth-child(1) .tit{color: #089977}
+.employ_main .emp_review{margin: 100px 0}
+.employ_main .emp_review .flex{display: flex;flex-wrap: wrap;}
+.employ_main .emp_review .flex > div{border: 1px solid #cdcdcd;width: calc(25% - 22.5px);margin-right: 30px;overflow: hidden;border-radius: 20px;margin-top: 40px}
+.employ_main .emp_review .flex > div:nth-child(4n){margin-right: 0;}
+.employ_main .emp_review .flex > div:nth-child(-n+4){margin-top: 0}
+.employ_main .emp_review .flex p{text-align: center;}
+.employ_main .emp_review .flex .tit{font-size: 15px;padding: 10px;background: #ddd;color: #fff;}
+.employ_main .emp_review .flex .txt{padding: 30px}
+.employ_main .emp_review .flex .desc{font-size: 13px;color: #666}
+.employ_main .emp_review .flex .ico{display: block;width: 68px;height: 58px;margin: 0 auto 30px auto}
+.employ_main .emp_review .flex .green .ico{background: url(../images/consulting/green_sb.png) no-repeat;}
+.employ_main .emp_review .flex .green .tit{background: #065643}
+.employ_main .emp_review .flex .yellow .ico{background: url(../images/consulting/yellow_sb.png) no-repeat;}
+.employ_main .emp_review .flex .yellow .tit{background: #fdbf53}
+.employ_main .emp_process{background: #f0f6f6;padding: 100px 0}
+.employ_main .emp_process .flex{display: flex;justify-content: space-between}
+.employ_main .emp_process .flex > div{width: calc(33.333% - 60px);margin-right: 90px}
+.employ_main .emp_process .flex > div:last-child{margin-right: 0}
+.employ_main .emp_process .flex > div img{max-width: 100%}
+.employ_main .emp_process .flex .tit{font-size: 20px;text-align: center;background: #14ad89;border-radius: 30px;padding: 10px;color: #fff;margin:0 20px 30px 20px;font-weight: 500;}
+
+/* 상담 신청하기*/
+.emp_cont {margin-top: 30px}
+.emp_cont > div {display: flex;margin-bottom: 20px;align-items: center}
+.emp_cont > div :last-child{margin-bottom: 0}
+.emp_cont > div .wr_tit{width: 110px;}
+.emp_cont > div .wr_txt{width: calc(100% - 110px)} 
+.emp_cont > div .ip_txt{width: 100%}
+.date_flex{display: flex;justify-content: space-between;align-items: center}
+.date_flex .write_table{width: 50%;}
+.date_flex .date_wrap{display: flex; }
+.date_flex .date{width: 145px}
+.answer .name_wrap{margin-top: 0}
 
 @media all and (max-width:1390px){
 	.consulting_wrap .visal{background-size: 450px}
@@ -242,6 +294,10 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .apply_area .flex p:before{left: 0}
 	.consulting_wrap .apply_area .flex p:after{right: 0}
 	.consulting_wrap .cs_step .flex .box{height: 100%}
+	
+	/*취업진로상담 메인*/
+	.employ_main .emp_apply{padding: 30px 50px 30px 50px}
+	.employ_main .emp_info .flex > div{margin-right: 30px}
 }
 
 
@@ -282,6 +338,19 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_sub .write_table .colspan3{width: calc(100% - 110px)}
 	.consulting_sub .btn_wrap{display: block}
 	.consulting_sub .btn_wrap .right{text-align: right;margin-top: 20px}
+	
+	/* 취업진로상담 메인 */
+	.employ_main .emp_visal{background-size: 350px;background-position: bottom right;padding: 80px 40px}
+	.employ_main .emp_apply{flex-direction: column;}
+	.employ_main .emp_apply a{margin-top: 20px}
+	.employ_main .emp_info .flex{flex-wrap: wrap;}
+	.employ_main .emp_info .flex > div{margin-right: 20px;width: calc(50% - 10px);margin-top: 30px}
+	.employ_main .emp_info .flex .tit:before{height: 30px}
+	.employ_main .emp_info .flex > div:nth-child(2n){margin-right: 0;}
+	.employ_main .emp_info .flex > div:nth-child(-n+2){margin-top: 0}
+	.employ_main .emp_info .flex .circle{margin: auto}
+	.employ_main .emp_process .flex > div{width: calc(33.333% - 20px);margin-right: 30px}
+	
 }
 
 @media all and (max-width:768px){
@@ -372,7 +441,7 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_sub .btn_wrap .left{font-size: 14px;word-break: keep-all}
 	.consulting_sub .btn_wrap .right{text-align: center}
 	.consulting_sub .btn_wrap .bl_btn,
-	.consulting_sub .btn_wrap .blue_btn{font-size: 15px;padding: 10px 30px}
+	.consulting_sub .btn_wrap .blue_btn{font-size: 15px;padding: 5px 30px;width: 130px;}
 	.consulting_sub .white_box{padding: 20px}
 	
 	/* 자기소개서 완료 */
@@ -381,6 +450,31 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.score_select{width: 100%;}
 	.consulting_score .ss_cont{font-size: 15px}
 	.consulting_score .ip_txt{width: 100%}
+	
+	/* 취업진로상담 메인 */
+	.emp_tit{margin-bottom: 30px}
+	.emp_tit h3{font-size: 22px}
+	.emp_tit p{font-size: 15px}
+	.employ_main .emp_visal h3{font-size: 22px;word-break: keep-all}
+	.employ_main .emp_visal{background-image: none;;padding: 60px 20px;margin-bottom: 100px}
+	.employ_main .emp_apply p{word-break: keep-all;font-size: 22px;text-align: center}
+	.employ_main .emp_info{padding: 100px 0 30px 0}
+	.employ_main .emp_apply span{font-size: 26px}
+	.employ_main .emp_apply a{font-size: 15px}
+	.employ_main .emp_apply{padding: 20px}
+	.employ_main .emp_review{margin: 30px 0}
+	.employ_main .emp_review .flex > div{margin-right: 20px;width: calc(50% - 10px);margin-top: 20px}
+	.employ_main .emp_review .flex > div:nth-child(-n+4){margin-top: 20px}
+	.employ_main .emp_review .flex > div:nth-child(-n+2){margin-top: 0}
+	.employ_main .emp_review .flex > div:nth-child(2n){margin-right: 0;}
+	.employ_main .emp_review .flex .txt{padding: 20px}
+	.employ_main .emp_process .flex .tit{font-size: 16px;margin: 0 auto 20px auto;max-width: 362px;}
+	.employ_main .emp_process{padding: 30px 0}
+	.employ_main .emp_review .flex .ico{background-size: 50px !important;width: 50px;height: 48px;margin: 0 auto 20px auto}
+	.employ_main .emp_process .flex{display: block;}
+	.employ_main .emp_process .flex > div{width: 100%;margin-right: 0;margin-bottom: 30px;text-align: center;}
+	.employ_main .emp_process .flex > div:last-child{margin-bottom: 0}
+	
 }
 
 @media all and (max-width:480px){
@@ -400,4 +494,14 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.consulting_wrap .review .slick-dots li button{width: 10px;height: 10px;border-radius: 50%;background: #d6d6d6;text-indent: -9999px;}
 	.consulting_wrap .review .item{box-shadow: none}
 	.consulting_wrap .review .slick-dots li.slick-active button{background: #2189ff}
+	
+	/* 취업진로상담 메인 */
+	.employ_main .emp_info .flex .circle{width: 140px;height: 140px;font-size: 26px}
+	.employ_main .emp_info .flex .tit{font-size: 15px}
+	
+	/* 취업진로상담 작성 */
+	.emp_cont{margin-top: 20px}
+	.emp_cont > div{display: block;}
+	.emp_cont > div .wr_tit{width: 100%;margin-bottom: 10px;font-size: 14px}
+	.emp_cont > div .wr_txt {width: 100%;font-size: 15px}
 }

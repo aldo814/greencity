@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 기존 css, js-->
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/fonts.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/common.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/common/css/jquery-ui.min.css">
+
+	<script src="https://kimguta.github.io/page/common/js/jquery-3.6.0.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/jquery-ui.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/puble_common.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/slick.min.js"></script>
+	<script src="https://kimguta.github.io/page/common/js/common.js"></script>
+
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/app.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/index.css">
+	<link rel="stylesheet" href="https://kimguta.github.io/page/greencity/css/aos.css">
+
+	<script src="https://kimguta.github.io/page/greencity/js/app.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/index.js"></script>
+	<script src="https://kimguta.github.io/page/greencity/js/aos.js"></script>
+
+	<!--추가-->
+	<link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/diag.css">
+	<link rel="stylesheet" href="css/consulting.css">
+</head>
+
+<body>
+	<div class="consulting_wrap consulting_sub">
+		<div class="inner">
+			<h2>취업·진로 상담 신청하기</h2>
+			<div class="white_box">
+				<h3 class="ico_tit it01">
+					기본정보
+				</h3>
+				<div class="name_wrap">
+					<p class="wr_tit">신청자명</p>
+					<p class="cont">홍길동</p>
+				</div>
+				<table class="write_table">
+					<caption class="hide">기본정보</caption>
+					<colgroup>
+						<col style="width: 70px">
+						<col>
+						<col style="width: 110px">
+						<col>
+						<col style="width: 110px">
+						<col>
+						<col style="width: 120px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" class="wr_tit">
+								<label for="area">지역</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="area" name="area">
+									<option>선택</option>
+								</select>
+							</td>
+							<th scope="row" class="wr_tit">
+								<label for="state">취업상태</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="state" name="state">
+									<option>선택</option>
+								</select>
+							</td>
+
+							<th scope="row" class="wr_tit">
+								<label for="age">연령</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="age" name="field">
+									<option>선택</option>
+								</select>
+							</td>
+
+							<th scope="row" class="wr_tit">
+								<label for="gender">성별</label>
+							</th>
+							<td class="wr_txt">
+								<select class="select_style01" id="gender" name="term">
+									<option>선택</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="white_box">
+				<h3 class="ico_tit it03">상담 내용</h3>
+				<div class="emp_cont">
+					<div>
+						<p class="wr_tit">
+						<label for="field1">상담분야</label></p>
+						<div class="wr_txt">
+							<div class="select_wrap">
+								<select class="select_style01" id="field1">
+									<option>선택</option>
+								</select>
+								<label for="field2" class="hide">상담분야 2depth</label>
+								<select class="select_style01" id="field2">
+									<option>선택</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="wr_tit">
+							<label for="emp_tit">상담제목</label>
+						</p>
+						<div class="wr_txt">
+						<input type="text" class="ip_txt" placeholder="상담 제목을 입력해주세요 (30자 이내)" id="emp_tit">
+						</div>
+					</div>
+					<div>
+						<p class="wr_tit">
+							<label for="emp_desc">상담내용</label>
+						</p>
+						<div class="wr_txt">
+						<textarea class="ip_txt" id="cs_cont" placeholder="상담 희망 내용을 작성해주세요(최소 50자 이상)
+"></textarea>
+						</div>
+					</div>
+				</div>
+				<ul>
+					<li class="gray02 f13">※ 상담내용은 최소 50자 이상 작성해야 정상적으로 신청됩니다.</li>
+					<li class="gray02 f13">※ 욕설, 비방 등의 부적절한 상담 신청은 반려될 수 있으며, 원활한 상담 진행을 위하여 상담내용을 구체적으로 작성하여 주시기 바랍니다.</li>
+					<li class="gray02 f13">※ 신청 내용은 상담 진행을 위한 목적으로만 사용되므로, 배정 컨설턴트 외에는 절대 공개되지 않습니다.</li>
+				</ul>
+			</div>
+			<div class="btn_wrap">
+			<p class="left f13">※ 컨설팅 신청 후, 작성 내용을 수정하실 수 없습니다. 이점 유의하여 신청하시기 바랍니다.</p>
+				<div class="right">
+					<a href="#" class="blue_btn">컨설팅 신청</a>
+					<a href="#" class="bl_btn">취소</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--추가 js-->
+	<script src="js/sly.js"></script>
+	<script src="js/run.js"></script>
+	<script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+</body></html>
