@@ -257,8 +257,15 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .employ_main .emp_info .flex .tit{font-size: 20px;font-weight: bold;}
 .employ_main .emp_info .flex .desc{font-size: 13px;color: #666666}
 .employ_main .emp_info .flex .tit:before{content: '';display: block;width: 1px;height: 60px;border-left: 1px dashed #adb2b2;margin: 10px auto}
-.employ_main .emp_info .flex > div:nth-child(1) .circle{background: url(../images/consulting/note.png) no-repeat center #d8e6e4}
-.employ_main .emp_info .flex > div:nth-child(1) .tit{color: #089977}
+.employ_main .emp_info .flex > div:hover .circle{text-indent: -9999px}
+.employ_main .emp_info .flex > div:hover:nth-child(1) .circle{background: url(../images/consulting/note.png) no-repeat center #d8e6e4;}
+.employ_main .emp_info .flex > div:hover:nth-child(2) .circle{background: url(../images/consulting/note_02.png) no-repeat center #d8e6e4;}
+.employ_main .emp_info .flex > div:hover:nth-child(3) .circle{background: url(../images/consulting/note_03.png) no-repeat center #d8e6e4;}
+.employ_main .emp_info .flex > div:hover:nth-child(4) .circle{background: url(../images/consulting/note_04.png) no-repeat center #d8e6e4;}
+.employ_main .emp_info .flex > div:hover:nth-child(5) .circle{background: url(../images/consulting/note_05.png) no-repeat center #d8e6e4;}
+.employ_main .emp_info .flex > div:hover .tit,
+.employ_main .emp_info .flex > div:hover .active,
+.employ_main .emp_info .flex > div:hover .focus{color: #089977;}
 .employ_main .emp_review{margin: 100px 0}
 .employ_main .emp_review .flex{display: flex;flex-wrap: wrap;}
 .employ_main .emp_review .flex > div{border: 1px solid #cdcdcd;width: calc(25% - 22.5px);margin-right: 30px;overflow: hidden;border-radius: 20px;margin-top: 40px}
