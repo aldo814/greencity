@@ -235,6 +235,55 @@
 		}
 	});
 	 
+	
+
+	$('.page_nav li:first-child a').click(function () {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 300);
+
+	});
+
+
+	// 스크롤 배너
+	var currentPosition = parseInt($(".nav_view").css("top"));
+	var height = $(".nav_view").height();
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 520) {
+			var position = $(window).scrollTop();
+			$(".nav_view").stop().animate({
+				"top": position - height + "px"
+			}, 300);
+		} else {
+			var position = $(window).scrollTop();
+			$(".nav_view").stop().animate({
+				"top": position + "px"
+			}, 300);
+
+		}
+
+
+	});
+
+	// target 위치 표시와, 이동 
+	var sections = $('.target'),
+		section_height = sections.height(),
+		nav = $('.nav_view'),
+		nav_height = nav.outerHeight();
+	$(window).on('scroll', function () {
+		var cur_pos = $(this).scrollTop();
+		sections.each(function () {
+			var top = $(this).offset().top - nav_height,
+				bottom = top + $(this).outerHeight();
+
+			if (cur_pos >= top && cur_pos <= bottom) {
+				nav.find('a').parent().removeClass('active');
+				sections.removeClass('active');
+				$(this).parent().addClass('active');
+				nav.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass('active');
+			}
+		});
+	});
 	 
  });
 

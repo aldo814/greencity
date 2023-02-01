@@ -1,4 +1,6 @@
 .consulting_wrap .hide{display: block;position: absolute;left: -9999px;text-indent: -9999px}
+.consulting_wrap .wb{word-break: keep-all}
+.consulting_wrap .mt50{margin-top: 50px}
 .consulting_wrap .red{color: #ff0000 !important}
 .consulting_wrap .bold{font-weight: 600 !important}
 .consulting_wrap .main_section01 h2{text-align: center;font-size: 30px;font-weight: 400;line-height: 1.8}
@@ -175,6 +177,8 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .consulting_sub  
 .select_style01 {-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/consulting/select_arrow.png) right 10px center no-repeat;border: 1px solid #c2c2c2;padding:7px 30px 7px 10px;font-size: 15px;color: #535353}
 .select_style01::-ms-expand {display: none;}
+.select_style02 {-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/consulting/select_arrow02.png) right 10px center no-repeat;padding:7px 30px 7px 10px;font-size: 18px;color: #535353}
+.select_style02::-ms-expand {display: none;}
 .consulting_sub .select_wrap{display: flex;}
 .consulting_sub .select_wrap select{margin-right: 10px}
 .consulting_sub .select_wrap select:last-child{margin-right: 0}
@@ -313,6 +317,62 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 .emp_current .cs_status .btn_wrap{display: table-cell}
 .sub_btn{align-items: center}
 
+/* 가이드북 더보기 */
+.bg{background: #f0f6f7;padding: 30px 0}
+.mb10{margin-bottom: 10px !important}
+.sub_search{background: #fff;border-radius: 20px;padding: 40px 30px;display: flex;margin: 60px 0 30px 0;justify-content: space-between;align-items: center}
+.sub_search .select_list{display: flex;}
+.sub_search .select_list li{margin-right: 30px;padding-right: 30px;position: relative;}
+.sub_search .select_list li:after{content: '';display: block;width: 1px;height: 19px;background: #dddddd;position: absolute;right:0;top: 50%;transform: translateY(-50%) }
+.sub_search .select_list li:last-child{margin-right: 0;padding-right: 0;}
+.sub_search .select_list li:last-child:after{display: none}
+.sub_search .select_list .select_style02{width: 170px;}
+.sub_search .input_wrap{width: 250px;display: flex;align-items: center;justify-content: space-between}
+.sub_search .input_wrap input::placeholder{color: #dddddd}
+.sub_search .input_wrap input{font-size: 18px;width: calc(100% - 35px)}
+.sub_search .input_wrap button{background: url(../images/consulting/search_ico.png) no-repeat #2189ff center;width: 30px;height: 30px;border-radius: 50%;text-indent: -9999px;}
+.white_box02{background: #ffffff;border-radius: 20px;padding: 20px}
+.post_list .post_article{border-bottom: 1px solid #dddddd;padding-bottom: 30px;margin-bottom: 30px;position: relative;}
+.post_list .post_article .company_name{font-size: 16px;font-weight: bold;display: flex;align-items: center;margin-bottom: 20px}
+.post_list .post_article .company_name span{background: url(../images/consulting/tit_ico.png) no-repeat #2189ff center;display: block;width: 30px;height: 30px;border-radius: 50%;margin-right: 15px}
+.post_list .post_article .guide_book_list{color: #7d7d7d;width: calc(100% - 200px)}
+.post_list .post_article .guide_book_list01{display: flex;margin-bottom: 15px}
+.post_list .post_article .guide_book_list01 li{margin-right: 50px}
+.post_list .post_article .guide_book_list01 li:last-child{margin-right: 0}
+.post_list .post_article .btn_area a{color: #2189ff;border: 1px solid #2189ff;padding: 10px 40px;border-radius: 5px;font-weight: 500;position: absolute;right: 0;bottom: 30px;}
+.post_list .post_article .top{display: flex;align-items: center;}
+.post_list .post_article .top .bg_orange{background: #ff7256;color: #fff;padding: 5px 20px;border-radius: 20px;margin-right: 15px}
+.post_list .post_article .left{width: calc(100% - 200px)}
+.post_list .post_article .top .orange{color: #ff7256;font-weight: 500}
+.post_list .post_article .tit{font-size: 18px;font-weight: 600;margin: 20px 0}
+.post_list .post_article .tag{display: flex;flex-wrap: wrap}
+.post_list .post_article .tag li{margin-right: 15px;color: #7d7d7d;font-size: 18px}
+.post_list .post_article .tag li:last-child{margin-right: 0}
+
+/* 합격자 자기소개서 */
+.it_view .tit{font-size: 18px;font-weight: bold}
+.it_view .desc{color: #7d7d7d;font-size: 16px;margin-top: 10px}
+.it_view .iv_area{border-bottom: 1px solid #7d7d7d;padding-bottom: 30px;margin-bottom: 30px}
+.it_view .iv_area:last-child{padding-bottom: 0;margin-bottom: 0;border-bottom: 0}
+.list_btn{text-align: center;margin-top: 60px}
+.list_btn a{display: inline-block;padding: 10px 60px;background: #1181ff;color: #fff;border-radius: 30px;font-size: 18px}
+.nav_view_wrap{position: relative;display: flex;margin-top: 50px}
+.nav_view_wrap .nav_view{position: absolute;width: 365px}
+.nav_view_wrap .nav_view .ico{font-size: 24px;font-weight: 500;display: flex;align-items: center;margin-bottom: 15px}
+.nav_view_wrap .nav_view .ico .ico_fix{width: 30px;height: 30px;background: url(../images/consulting/Item_ico.png) #2189ff center no-repeat;border-radius: 50%;margin-right: 10px}
+.nav_view_wrap .nav_view .page_nav li a{font-size: 18px;color: #7d7d7d;display: block;}
+.nav_view_wrap .nav_view .page_nav li{border-bottom: 1px dashed #dddddd;padding-bottom: 10px;padding-left: 10px;margin-bottom: 10px;position: relative;}
+.nav_view_wrap .nav_view .page_nav li:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0}
+.nav_view_wrap .nav_view .page_nav li.active a{color: #1b1b1b;font-weight: 500;position: relative;}
+.nav_view_wrap .nav_view .page_nav li.active a:after{content: '';display: block;background: url(../images/consulting/red_arrow.png) no-repeat;width: 12px;height: 15px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.nav_view_wrap .nav_view_cont{width: calc(100% - 395px);margin-left: auto}
+.nav_view_wrap .nav_view_cont .tit{font-size: 18px;font-weight: bold}
+.nav_view_wrap .nav_view_cont .desc{color: #7d7d7d;margin-top: 10px}
+.nav_view_wrap .nav_view_cont .desc:first-child{margin-top: 0}
+.nav_view_wrap .nav_view_cont .desc.blue{color: #1181ff !important}
+
+.nav_view_wrap .nav_view_cont .after .desc{margin-top: 0}
+.nav_view_wrap .nav_view_cont .after .tit{margin-bottom: 10px}
 
 @media all and (max-width:1390px){
 	.consulting_wrap .visal{background-size: 450px}
@@ -380,6 +440,17 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.employ_main .emp_info .flex .circle{margin: auto}
 	.employ_main .emp_process .flex > div{width: calc(33.333% - 20px);margin-right: 30px}
 	.date_flex{align-items: flex-start}
+	
+	/*자기소개서 가이드북 더보기 */
+	.sub_search{display: block}
+	.sub_search .input_wrap{width: 100%;margin-top: 20px}
+	.sub_search .select_list{width: 100%}
+	.sub_search .select_list li{width: calc(33.333% - 20px);}
+	.sub_search .select_list li .select_style02{width: 100%;}
+	
+	/* 자기소개서 가이드북 자세히보기 */
+	.nav_view_wrap .nav_view{display: none}
+	.nav_view_wrap .nav_view_cont{width: 100%}
 	
 }
 
@@ -515,6 +586,35 @@ border-radius:5px;display: inline-block;margin-right: 5px}
 	.emp_current .cs_status .top a{margin-left: 0;margin-top: 10px;display: inline-block}
 	.emp_current .cs_status .top h3{font-size: 18px;}
 	.emp_current .cs_status .top a{font-size: 14px;padding: 5px 20px}
+	
+	/*자기소개서 가이드북 더보기 */
+	.sub_search{margin: 30px 0;padding: 30px 20px}
+	.sub_search .select_list{display: block;}
+	.sub_search .select_list li{width: 100%;margin-right: 0;padding-right: 0;margin-bottom: 10px}
+	.select_style02{padding-left: 0}
+	.sub_search .select_list li:after{display: none}
+	.select_style02,
+	.sub_search .input_wrap input{font-size: 15px}
+	.post_list .post_article .guide_book_list{width: 100%;font-size: 14px}
+	.post_list .post_article .btn_area{margin-top: 20px;text-align: center;}
+	.post_list .post_article .btn_area a{position:static;display: inline-block;}
+	.post_list .post_article .company_name{font-size: 15px}
+	.post_list .post_article .btn_area a{padding: 5px 30px}
+	.post_list .post_article .guide_book_list01 li{margin-right: 20px}
+	.post_list .post_article .top .bg_orange,
+	.post_list .post_article .top .orange{font-size: 15px}
+	.post_list .post_article .tit{margin: 15px 0;font-size: 16px}
+	.post_list .post_article .left{width: 100%}
+	.post_list .post_article .tag li{font-size: 15px}
+	.it_view .tit{font-size: 16px}
+	.it_view .desc{font-size: 14px;margin-top: 10px}
+	.list_btn{margin-top: 30px}
+	.list_btn a{font-size: 14px;padding: 10px 40px}
+	
+	/* 가이드북 더보기 */
+	.nav_view_wrap{margin-top: 30px}
+	.nav_view_wrap .nav_view_cont .tit{font-size: 16px}
+	.nav_view_wrap .nav_view_cont .desc{font-size: 15px}
 }
 
 @media all and (max-width:480px){
