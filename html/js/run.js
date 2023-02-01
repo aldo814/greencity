@@ -252,7 +252,7 @@
 		if ($(window).scrollTop() > 520) {
 			var position = $(window).scrollTop();
 			$(".nav_view").stop().animate({
-				"top": position - height + "px"
+				"top": position + "px"
 			}, 300);
 		} else {
 			var position = $(window).scrollTop();
