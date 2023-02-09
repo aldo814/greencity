@@ -6,6 +6,7 @@
  
  /*full영역*/
  .ik_inner#content{max-width:100%;padding:40px 0 0 0}
+ .ik_inner#content .pageTab{max-width:1390px;position:relative;margin:0 auto 35px auto;padding:0 20px;}
  .pb50{padding-bottom:50px}
  
 /* 메인 비쥬얼 */
