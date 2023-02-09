@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+/*나의강의실*/
+.lecture_btn{background: #a3cd73;color: #fff;padding: 3px 10px;color: #fff !important;font-size: 13px;border-radius: 5px}
 /* 메인 비쥬얼 */
 .f14 {font-size: 14px}
 .gray{color: #666666}
